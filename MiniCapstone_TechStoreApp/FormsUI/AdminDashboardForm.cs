@@ -21,5 +21,10 @@ namespace MiniCapstone_TechStoreApp.FormsUI
         {
             InitializeComponent();
         }
+
+        private void btn_BackColorChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
