@@ -16,5 +16,10 @@ namespace MiniCapstone_TechStoreApp.FormsUI
         {
             InitializeComponent();
         }
+
+        public AdminDashboardForm(string username, string password, bool isAdmin)
+        {
+            InitializeComponent();
+        }
     }
 }
