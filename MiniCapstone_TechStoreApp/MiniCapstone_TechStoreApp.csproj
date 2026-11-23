@@ -209,6 +209,12 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseMongoDB\MongoDBConnector.cs" />
+    <Compile Include="FormsUI\ProductCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormsUI\ProductCard.Designer.cs">
+      <DependentUpon>ProductCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsUI\RegistrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,7 @@
     <Compile Include="Helper\FormLayoutHelper.cs" />
     <Compile Include="Helper\UserSession.cs" />
     <Compile Include="Models\EmailVerfication.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\UserDB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -239,8 +246,14 @@
     <EmbeddedResource Include="FormsUI\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsUI\ProductCard.resx">
+      <DependentUpon>ProductCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsUI\RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsUI\UserDashboardForm.resx">
+      <DependentUpon>UserDashboardForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsUI\VerifyEmailForm.resx">
       <DependentUpon>VerifyEmailForm.cs</DependentUpon>
