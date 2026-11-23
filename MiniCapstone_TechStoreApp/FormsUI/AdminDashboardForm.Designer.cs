@@ -30,15 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboardForm));
             this.parrotSlidingPanel1 = new ReaLTaiizor.Controls.ParrotSlidingPanel();
-            this.button6 = new ReaLTaiizor.Controls.Button();
-            this.button5 = new ReaLTaiizor.Controls.Button();
-            this.button4 = new ReaLTaiizor.Controls.Button();
-            this.button3 = new ReaLTaiizor.Controls.Button();
-            this.button2 = new ReaLTaiizor.Controls.Button();
+            this.btnDiscount = new ReaLTaiizor.Controls.Button();
+            this.btnCustomer = new ReaLTaiizor.Controls.Button();
+            this.btnInventory = new ReaLTaiizor.Controls.Button();
+            this.btnOrder = new ReaLTaiizor.Controls.Button();
+            this.btnProduct = new ReaLTaiizor.Controls.Button();
             this.btnDashboard = new ReaLTaiizor.Controls.Button();
             this.pnlRounder = new ReaLTaiizor.Controls.ParrotControlEllipse();
             this.label1 = new System.Windows.Forms.Label();
             this.frmRounder = new ReaLTaiizor.Controls.ParrotFormEllipse();
+            this.pnlContent = new ReaLTaiizor.Controls.Panel();
             this.parrotSlidingPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,11 +51,11 @@
             this.parrotSlidingPanel1.Collapsed = true;
             this.parrotSlidingPanel1.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
             this.parrotSlidingPanel1.Controls.Add(this.label1);
-            this.parrotSlidingPanel1.Controls.Add(this.button6);
-            this.parrotSlidingPanel1.Controls.Add(this.button5);
-            this.parrotSlidingPanel1.Controls.Add(this.button4);
-            this.parrotSlidingPanel1.Controls.Add(this.button3);
-            this.parrotSlidingPanel1.Controls.Add(this.button2);
+            this.parrotSlidingPanel1.Controls.Add(this.btnDiscount);
+            this.parrotSlidingPanel1.Controls.Add(this.btnCustomer);
+            this.parrotSlidingPanel1.Controls.Add(this.btnInventory);
+            this.parrotSlidingPanel1.Controls.Add(this.btnOrder);
+            this.parrotSlidingPanel1.Controls.Add(this.btnProduct);
             this.parrotSlidingPanel1.Controls.Add(this.btnDashboard);
             this.parrotSlidingPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.parrotSlidingPanel1.HideControls = false;
@@ -73,106 +74,106 @@
             this.parrotSlidingPanel1.TopLeft = System.Drawing.Color.DarkBlue;
             this.parrotSlidingPanel1.TopRight = System.Drawing.Color.DarkBlue;
             // 
-            // button6
+            // btnDiscount
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.BorderColor = System.Drawing.Color.Transparent;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button6.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.InactiveColor = System.Drawing.Color.Transparent;
-            this.button6.Location = new System.Drawing.Point(12, 325);
-            this.button6.Name = "button6";
-            this.button6.PressedBorderColor = System.Drawing.Color.Blue;
-            this.button6.PressedColor = System.Drawing.Color.Blue;
-            this.button6.Size = new System.Drawing.Size(120, 49);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Discounts";
-            this.button6.TextAlignment = System.Drawing.StringAlignment.Far;
+            this.btnDiscount.BackColor = System.Drawing.Color.Transparent;
+            this.btnDiscount.BorderColor = System.Drawing.Color.Transparent;
+            this.btnDiscount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDiscount.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnDiscount.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscount.Image")));
+            this.btnDiscount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDiscount.InactiveColor = System.Drawing.Color.Transparent;
+            this.btnDiscount.Location = new System.Drawing.Point(12, 325);
+            this.btnDiscount.Name = "btnDiscount";
+            this.btnDiscount.PressedBorderColor = System.Drawing.Color.Blue;
+            this.btnDiscount.PressedColor = System.Drawing.Color.Blue;
+            this.btnDiscount.Size = new System.Drawing.Size(120, 49);
+            this.btnDiscount.TabIndex = 6;
+            this.btnDiscount.Text = "Discounts";
+            this.btnDiscount.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
-            // button5
+            // btnCustomer
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BorderColor = System.Drawing.Color.Transparent;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button5.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.InactiveColor = System.Drawing.Color.Transparent;
-            this.button5.Location = new System.Drawing.Point(12, 276);
-            this.button5.Name = "button5";
-            this.button5.PressedBorderColor = System.Drawing.Color.Blue;
-            this.button5.PressedColor = System.Drawing.Color.Blue;
-            this.button5.Size = new System.Drawing.Size(120, 49);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Customers";
-            this.button5.TextAlignment = System.Drawing.StringAlignment.Far;
+            this.btnCustomer.BackColor = System.Drawing.Color.Transparent;
+            this.btnCustomer.BorderColor = System.Drawing.Color.Transparent;
+            this.btnCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCustomer.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnCustomer.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
+            this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCustomer.InactiveColor = System.Drawing.Color.Transparent;
+            this.btnCustomer.Location = new System.Drawing.Point(12, 276);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.PressedBorderColor = System.Drawing.Color.Blue;
+            this.btnCustomer.PressedColor = System.Drawing.Color.Blue;
+            this.btnCustomer.Size = new System.Drawing.Size(120, 49);
+            this.btnCustomer.TabIndex = 5;
+            this.btnCustomer.Text = "Customers";
+            this.btnCustomer.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
-            // button4
+            // btnInventory
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BorderColor = System.Drawing.Color.Transparent;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button4.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.InactiveColor = System.Drawing.Color.Transparent;
-            this.button4.Location = new System.Drawing.Point(12, 227);
-            this.button4.Name = "button4";
-            this.button4.PressedBorderColor = System.Drawing.Color.Blue;
-            this.button4.PressedColor = System.Drawing.Color.Blue;
-            this.button4.Size = new System.Drawing.Size(120, 49);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Inventory";
-            this.button4.TextAlignment = System.Drawing.StringAlignment.Far;
+            this.btnInventory.BackColor = System.Drawing.Color.Transparent;
+            this.btnInventory.BorderColor = System.Drawing.Color.Transparent;
+            this.btnInventory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInventory.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnInventory.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnInventory.Image = ((System.Drawing.Image)(resources.GetObject("btnInventory.Image")));
+            this.btnInventory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInventory.InactiveColor = System.Drawing.Color.Transparent;
+            this.btnInventory.Location = new System.Drawing.Point(12, 227);
+            this.btnInventory.Name = "btnInventory";
+            this.btnInventory.PressedBorderColor = System.Drawing.Color.Blue;
+            this.btnInventory.PressedColor = System.Drawing.Color.Blue;
+            this.btnInventory.Size = new System.Drawing.Size(120, 49);
+            this.btnInventory.TabIndex = 4;
+            this.btnInventory.Text = "Inventory";
+            this.btnInventory.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
-            // button3
+            // btnOrder
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.BorderColor = System.Drawing.Color.Transparent;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button3.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.InactiveColor = System.Drawing.Color.Transparent;
-            this.button3.Location = new System.Drawing.Point(12, 178);
-            this.button3.Name = "button3";
-            this.button3.PressedBorderColor = System.Drawing.Color.Blue;
-            this.button3.PressedColor = System.Drawing.Color.Blue;
-            this.button3.Size = new System.Drawing.Size(120, 49);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Orders";
-            this.button3.TextAlignment = System.Drawing.StringAlignment.Far;
+            this.btnOrder.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnOrder.BorderColor = System.Drawing.Color.Transparent;
+            this.btnOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOrder.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnOrder.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnOrder.Image = ((System.Drawing.Image)(resources.GetObject("btnOrder.Image")));
+            this.btnOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrder.InactiveColor = System.Drawing.Color.Transparent;
+            this.btnOrder.Location = new System.Drawing.Point(12, 178);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.PressedBorderColor = System.Drawing.Color.Blue;
+            this.btnOrder.PressedColor = System.Drawing.Color.Blue;
+            this.btnOrder.Size = new System.Drawing.Size(120, 49);
+            this.btnOrder.TabIndex = 3;
+            this.btnOrder.Text = "Orders";
+            this.btnOrder.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
-            // button2
+            // btnProduct
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BorderColor = System.Drawing.Color.Transparent;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button2.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.InactiveColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(12, 129);
-            this.button2.Name = "button2";
-            this.button2.PressedBorderColor = System.Drawing.Color.Blue;
-            this.button2.PressedColor = System.Drawing.Color.Blue;
-            this.button2.Size = new System.Drawing.Size(120, 49);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Products       ";
-            this.button2.TextAlignment = System.Drawing.StringAlignment.Far;
+            this.btnProduct.BackColor = System.Drawing.Color.Transparent;
+            this.btnProduct.BorderColor = System.Drawing.Color.Transparent;
+            this.btnProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProduct.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnProduct.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
+            this.btnProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProduct.InactiveColor = System.Drawing.Color.Transparent;
+            this.btnProduct.Location = new System.Drawing.Point(12, 129);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.PressedBorderColor = System.Drawing.Color.Blue;
+            this.btnProduct.PressedColor = System.Drawing.Color.Blue;
+            this.btnProduct.Size = new System.Drawing.Size(120, 49);
+            this.btnProduct.TabIndex = 2;
+            this.btnProduct.Text = "Products       ";
+            this.btnProduct.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
             // btnDashboard
             // 
@@ -217,12 +218,27 @@
             this.frmRounder.CornerRadius = 10;
             this.frmRounder.EffectedForm = this;
             // 
+            // pnlContent
+            // 
+            this.pnlContent.BackColor = System.Drawing.Color.White;
+            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContent.EdgeColor = System.Drawing.Color.White;
+            this.pnlContent.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pnlContent.Location = new System.Drawing.Point(155, 0);
+            this.pnlContent.Name = "pnlContent";
+            this.pnlContent.Padding = new System.Windows.Forms.Padding(5);
+            this.pnlContent.Size = new System.Drawing.Size(729, 450);
+            this.pnlContent.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.pnlContent.TabIndex = 1;
+            this.pnlContent.Text = "panel1";
+            // 
             // AdminDashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(884, 450);
+            this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.parrotSlidingPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1366, 720);
@@ -243,12 +259,13 @@
         private ReaLTaiizor.Controls.ParrotSlidingPanel parrotSlidingPanel1;
         private ReaLTaiizor.Controls.ParrotControlEllipse pnlRounder;
         private ReaLTaiizor.Controls.Button btnDashboard;
-        private ReaLTaiizor.Controls.Button button2;
-        private ReaLTaiizor.Controls.Button button3;
-        private ReaLTaiizor.Controls.Button button6;
-        private ReaLTaiizor.Controls.Button button5;
-        private ReaLTaiizor.Controls.Button button4;
+        private ReaLTaiizor.Controls.Button btnProduct;
+        private ReaLTaiizor.Controls.Button btnOrder;
+        private ReaLTaiizor.Controls.Button btnDiscount;
+        private ReaLTaiizor.Controls.Button btnCustomer;
+        private ReaLTaiizor.Controls.Button btnInventory;
         private System.Windows.Forms.Label label1;
         private ReaLTaiizor.Controls.ParrotFormEllipse frmRounder;
+        private ReaLTaiizor.Controls.Panel pnlContent;
     }
 }

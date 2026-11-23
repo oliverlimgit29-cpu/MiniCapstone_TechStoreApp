@@ -198,6 +198,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormsUI\AdminDashboardContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUI\AdminDashboardContent.Designer.cs">
+      <DependentUpon>AdminDashboardContent.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsUI\AdminDashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +244,9 @@
     <Compile Include="Services\AuthenticatorService.cs" />
     <Compile Include="Services\EmailService.cs" />
     <Compile Include="Services\EmailVerificationService.cs" />
+    <EmbeddedResource Include="FormsUI\AdminDashboardContent.resx">
+      <DependentUpon>AdminDashboardContent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsUI\AdminDashboardForm.resx">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
     </EmbeddedResource>
