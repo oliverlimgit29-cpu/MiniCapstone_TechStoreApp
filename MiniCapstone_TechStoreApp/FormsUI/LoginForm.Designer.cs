@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.pnlLogin = new ReaLTaiizor.Controls.Panel();
-            this.linkLblRegister = new ReaLTaiizor.Controls.DungeonLinkLabel();
-            this.dungeonLabel5 = new ReaLTaiizor.Controls.DungeonLabel();
-            this.btnLogin = new ReaLTaiizor.Controls.DungeonButtonLeft();
-            this.dungeonLabel2 = new ReaLTaiizor.Controls.DungeonLabel();
-            this.txtPassword = new ReaLTaiizor.Controls.DungeonTextBox();
-            this.txtUsername = new ReaLTaiizor.Controls.DungeonTextBox();
             this.dungeonLabel1 = new ReaLTaiizor.Controls.DungeonLabel();
+            this.txtUsername = new ReaLTaiizor.Controls.DungeonTextBox();
+            this.txtPassword = new ReaLTaiizor.Controls.DungeonTextBox();
+            this.dungeonLabel2 = new ReaLTaiizor.Controls.DungeonLabel();
+            this.btnLogin = new ReaLTaiizor.Controls.DungeonButtonLeft();
+            this.dungeonLabel5 = new ReaLTaiizor.Controls.DungeonLabel();
+            this.linkLblRegister = new ReaLTaiizor.Controls.DungeonLinkLabel();
             this.airForm1 = new ReaLTaiizor.Forms.AirForm();
             this.pnlLogin.SuspendLayout();
             this.airForm1.SuspendLayout();
@@ -60,33 +60,63 @@
             this.pnlLogin.TabIndex = 10;
             this.pnlLogin.Text = "panel1";
             // 
-            // linkLblRegister
+            // dungeonLabel1
             // 
-            this.linkLblRegister.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.linkLblRegister.AutoSize = true;
-            this.linkLblRegister.BackColor = System.Drawing.Color.Transparent;
-            this.linkLblRegister.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.linkLblRegister.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-            this.linkLblRegister.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.linkLblRegister.Location = new System.Drawing.Point(245, 281);
-            this.linkLblRegister.Name = "linkLblRegister";
-            this.linkLblRegister.Size = new System.Drawing.Size(63, 20);
-            this.linkLblRegister.TabIndex = 8;
-            this.linkLblRegister.TabStop = true;
-            this.linkLblRegister.Text = "Register";
-            this.linkLblRegister.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(119)))), ((int)(((byte)(70)))));
+            this.dungeonLabel1.AutoSize = true;
+            this.dungeonLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.dungeonLabel1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dungeonLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.dungeonLabel1.Location = new System.Drawing.Point(41, 30);
+            this.dungeonLabel1.Name = "dungeonLabel1";
+            this.dungeonLabel1.Size = new System.Drawing.Size(75, 20);
+            this.dungeonLabel1.TabIndex = 3;
+            this.dungeonLabel1.Text = "Username";
             // 
-            // dungeonLabel5
+            // txtUsername
             // 
-            this.dungeonLabel5.AutoSize = true;
-            this.dungeonLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.dungeonLabel5.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.dungeonLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.dungeonLabel5.Location = new System.Drawing.Point(88, 281);
-            this.dungeonLabel5.Name = "dungeonLabel5";
-            this.dungeonLabel5.Size = new System.Drawing.Size(163, 20);
-            this.dungeonLabel5.TabIndex = 7;
-            this.dungeonLabel5.Text = "Don\'t have an account?";
+            this.txtUsername.BackColor = System.Drawing.Color.Transparent;
+            this.txtUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.txtUsername.EdgeColor = System.Drawing.Color.White;
+            this.txtUsername.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.txtUsername.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUsername.Location = new System.Drawing.Point(45, 53);
+            this.txtUsername.MaxLength = 32767;
+            this.txtUsername.Multiline = false;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.ReadOnly = false;
+            this.txtUsername.Size = new System.Drawing.Size(307, 28);
+            this.txtUsername.TabIndex = 0;
+            this.txtUsername.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtUsername.UseSystemPasswordChar = false;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
+            this.txtPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.txtPassword.EdgeColor = System.Drawing.Color.White;
+            this.txtPassword.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPassword.Location = new System.Drawing.Point(45, 132);
+            this.txtPassword.MaxLength = 32767;
+            this.txtPassword.Multiline = false;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.ReadOnly = false;
+            this.txtPassword.Size = new System.Drawing.Size(307, 28);
+            this.txtPassword.TabIndex = 1;
+            this.txtPassword.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPassword.UseSystemPasswordChar = false;
+            // 
+            // dungeonLabel2
+            // 
+            this.dungeonLabel2.AutoSize = true;
+            this.dungeonLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.dungeonLabel2.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dungeonLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.dungeonLabel2.Location = new System.Drawing.Point(41, 109);
+            this.dungeonLabel2.Name = "dungeonLabel2";
+            this.dungeonLabel2.Size = new System.Drawing.Size(70, 20);
+            this.dungeonLabel2.TabIndex = 4;
+            this.dungeonLabel2.Text = "Password";
             // 
             // btnLogin
             // 
@@ -110,63 +140,33 @@
             this.btnLogin.TextAlignment = System.Drawing.StringAlignment.Center;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // dungeonLabel2
+            // dungeonLabel5
             // 
-            this.dungeonLabel2.AutoSize = true;
-            this.dungeonLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.dungeonLabel2.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.dungeonLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.dungeonLabel2.Location = new System.Drawing.Point(41, 109);
-            this.dungeonLabel2.Name = "dungeonLabel2";
-            this.dungeonLabel2.Size = new System.Drawing.Size(70, 20);
-            this.dungeonLabel2.TabIndex = 4;
-            this.dungeonLabel2.Text = "Password";
+            this.dungeonLabel5.AutoSize = true;
+            this.dungeonLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.dungeonLabel5.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dungeonLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.dungeonLabel5.Location = new System.Drawing.Point(88, 281);
+            this.dungeonLabel5.Name = "dungeonLabel5";
+            this.dungeonLabel5.Size = new System.Drawing.Size(163, 20);
+            this.dungeonLabel5.TabIndex = 7;
+            this.dungeonLabel5.Text = "Don\'t have an account?";
             // 
-            // txtPassword
+            // linkLblRegister
             // 
-            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
-            this.txtPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.txtPassword.EdgeColor = System.Drawing.Color.White;
-            this.txtPassword.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPassword.Location = new System.Drawing.Point(45, 132);
-            this.txtPassword.MaxLength = 32767;
-            this.txtPassword.Multiline = false;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.ReadOnly = false;
-            this.txtPassword.Size = new System.Drawing.Size(307, 28);
-            this.txtPassword.TabIndex = 1;
-            this.txtPassword.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtPassword.UseSystemPasswordChar = false;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BackColor = System.Drawing.Color.Transparent;
-            this.txtUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.txtUsername.EdgeColor = System.Drawing.Color.White;
-            this.txtUsername.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.txtUsername.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUsername.Location = new System.Drawing.Point(45, 53);
-            this.txtUsername.MaxLength = 32767;
-            this.txtUsername.Multiline = false;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.ReadOnly = false;
-            this.txtUsername.Size = new System.Drawing.Size(307, 28);
-            this.txtUsername.TabIndex = 0;
-            this.txtUsername.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtUsername.UseSystemPasswordChar = false;
-            // 
-            // dungeonLabel1
-            // 
-            this.dungeonLabel1.AutoSize = true;
-            this.dungeonLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.dungeonLabel1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.dungeonLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.dungeonLabel1.Location = new System.Drawing.Point(41, 30);
-            this.dungeonLabel1.Name = "dungeonLabel1";
-            this.dungeonLabel1.Size = new System.Drawing.Size(75, 20);
-            this.dungeonLabel1.TabIndex = 3;
-            this.dungeonLabel1.Text = "Username";
+            this.linkLblRegister.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.linkLblRegister.AutoSize = true;
+            this.linkLblRegister.BackColor = System.Drawing.Color.Transparent;
+            this.linkLblRegister.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.linkLblRegister.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
+            this.linkLblRegister.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.linkLblRegister.Location = new System.Drawing.Point(245, 281);
+            this.linkLblRegister.Name = "linkLblRegister";
+            this.linkLblRegister.Size = new System.Drawing.Size(63, 20);
+            this.linkLblRegister.TabIndex = 8;
+            this.linkLblRegister.TabStop = true;
+            this.linkLblRegister.Text = "Register";
+            this.linkLblRegister.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(119)))), ((int)(((byte)(70)))));
             // 
             // airForm1
             // 
@@ -178,6 +178,7 @@
             this.airForm1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.airForm1.Image = null;
             this.airForm1.Location = new System.Drawing.Point(0, 0);
+            this.airForm1.MaximumSize = new System.Drawing.Size(1366, 720);
             this.airForm1.MinimumSize = new System.Drawing.Size(112, 35);
             this.airForm1.Movable = true;
             this.airForm1.Name = "airForm1";
@@ -192,16 +193,18 @@
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(817, 382);
             this.Controls.Add(this.airForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1366, 720);
             this.MinimumSize = new System.Drawing.Size(112, 35);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();

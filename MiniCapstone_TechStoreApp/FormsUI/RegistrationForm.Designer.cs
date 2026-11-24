@@ -37,8 +37,8 @@
             this.btnRegister = new ReaLTaiizor.Controls.DungeonButtonLeft();
             this.linkLblLogin = new ReaLTaiizor.Controls.DungeonLinkLabel();
             this.Register = new ReaLTaiizor.Forms.AirForm();
-            this.dungeonLabel5 = new ReaLTaiizor.Controls.DungeonLabel();
             this.pnlRegister = new ReaLTaiizor.Controls.Panel();
+            this.dungeonLabel5 = new ReaLTaiizor.Controls.DungeonLabel();
             this.Register.SuspendLayout();
             this.pnlRegister.SuspendLayout();
             this.SuspendLayout();
@@ -179,6 +179,7 @@
             this.Register.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Register.Image = null;
             this.Register.Location = new System.Drawing.Point(0, 0);
+            this.Register.MaximumSize = new System.Drawing.Size(1366, 720);
             this.Register.MinimumSize = new System.Drawing.Size(112, 35);
             this.Register.Movable = true;
             this.Register.Name = "Register";
@@ -191,18 +192,6 @@
             this.Register.Text = "Register";
             this.Register.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.Register.Transparent = false;
-            // 
-            // dungeonLabel5
-            // 
-            this.dungeonLabel5.AutoSize = true;
-            this.dungeonLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.dungeonLabel5.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.dungeonLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.dungeonLabel5.Location = new System.Drawing.Point(93, 354);
-            this.dungeonLabel5.Name = "dungeonLabel5";
-            this.dungeonLabel5.Size = new System.Drawing.Size(178, 20);
-            this.dungeonLabel5.TabIndex = 7;
-            this.dungeonLabel5.Text = "Already have an account?";
             // 
             // pnlRegister
             // 
@@ -225,6 +214,18 @@
             this.pnlRegister.TabIndex = 9;
             this.pnlRegister.Text = "panel1";
             // 
+            // dungeonLabel5
+            // 
+            this.dungeonLabel5.AutoSize = true;
+            this.dungeonLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.dungeonLabel5.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dungeonLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.dungeonLabel5.Location = new System.Drawing.Point(93, 354);
+            this.dungeonLabel5.Name = "dungeonLabel5";
+            this.dungeonLabel5.Size = new System.Drawing.Size(178, 20);
+            this.dungeonLabel5.TabIndex = 7;
+            this.dungeonLabel5.Text = "Already have an account?";
+            // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -232,6 +233,7 @@
             this.ClientSize = new System.Drawing.Size(918, 468);
             this.Controls.Add(this.Register);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1366, 720);
             this.MinimumSize = new System.Drawing.Size(112, 35);
             this.Name = "RegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -103,11 +103,10 @@
             this.tblPanelAdminDashboard.Location = new System.Drawing.Point(0, 0);
             this.tblPanelAdminDashboard.Name = "tblPanelAdminDashboard";
             this.tblPanelAdminDashboard.RowCount = 4;
-            this.tblPanelAdminDashboard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblPanelAdminDashboard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tblPanelAdminDashboard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tblPanelAdminDashboard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tblPanelAdminDashboard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblPanelAdminDashboard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.11236F));
+            this.tblPanelAdminDashboard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.47191F));
+            this.tblPanelAdminDashboard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.47191F));
+            this.tblPanelAdminDashboard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.94382F));
             this.tblPanelAdminDashboard.Size = new System.Drawing.Size(888, 450);
             this.tblPanelAdminDashboard.TabIndex = 0;
             // 
@@ -118,10 +117,10 @@
             this.pnlRecentOrders.Controls.Add(this.poisonDataGridView1);
             this.pnlRecentOrders.Controls.Add(this.pnlRecentOrdersHeader);
             this.pnlRecentOrders.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlRecentOrders.Location = new System.Drawing.Point(447, 160);
+            this.pnlRecentOrders.Location = new System.Drawing.Point(447, 149);
             this.pnlRecentOrders.Name = "pnlRecentOrders";
             this.tblPanelAdminDashboard.SetRowSpan(this.pnlRecentOrders, 2);
-            this.pnlRecentOrders.Size = new System.Drawing.Size(438, 287);
+            this.pnlRecentOrders.Size = new System.Drawing.Size(438, 298);
             this.pnlRecentOrders.TabIndex = 5;
             // 
             // pnlTotalCustomers
@@ -133,7 +132,7 @@
             this.pnlTotalCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTotalCustomers.Location = new System.Drawing.Point(447, 48);
             this.pnlTotalCustomers.Name = "pnlTotalCustomers";
-            this.pnlTotalCustomers.Size = new System.Drawing.Size(216, 106);
+            this.pnlTotalCustomers.Size = new System.Drawing.Size(216, 95);
             this.pnlTotalCustomers.TabIndex = 3;
             // 
             // pnlHeader
@@ -157,7 +156,7 @@
             this.pnlTotalSales.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pnlTotalSales.Location = new System.Drawing.Point(3, 48);
             this.pnlTotalSales.Name = "pnlTotalSales";
-            this.pnlTotalSales.Size = new System.Drawing.Size(216, 106);
+            this.pnlTotalSales.Size = new System.Drawing.Size(216, 95);
             this.pnlTotalSales.TabIndex = 1;
             // 
             // pnlTotalOrders
@@ -170,7 +169,7 @@
             this.pnlTotalOrders.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pnlTotalOrders.Location = new System.Drawing.Point(225, 48);
             this.pnlTotalOrders.Name = "pnlTotalOrders";
-            this.pnlTotalOrders.Size = new System.Drawing.Size(216, 106);
+            this.pnlTotalOrders.Size = new System.Drawing.Size(216, 95);
             this.pnlTotalOrders.TabIndex = 2;
             // 
             // pnlSalesOverview
@@ -180,10 +179,10 @@
             this.pnlSalesOverview.Controls.Add(this.panel1);
             this.pnlSalesOverview.Controls.Add(this.parrotLineGraph1);
             this.pnlSalesOverview.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSalesOverview.Location = new System.Drawing.Point(3, 160);
+            this.pnlSalesOverview.Location = new System.Drawing.Point(3, 149);
             this.pnlSalesOverview.Name = "pnlSalesOverview";
             this.tblPanelAdminDashboard.SetRowSpan(this.pnlSalesOverview, 2);
-            this.pnlSalesOverview.Size = new System.Drawing.Size(438, 287);
+            this.pnlSalesOverview.Size = new System.Drawing.Size(438, 298);
             this.pnlSalesOverview.TabIndex = 4;
             // 
             // roundHeader
@@ -305,7 +304,7 @@
             this.pnlDiscounts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDiscounts.Location = new System.Drawing.Point(669, 48);
             this.pnlDiscounts.Name = "pnlDiscounts";
-            this.pnlDiscounts.Size = new System.Drawing.Size(216, 106);
+            this.pnlDiscounts.Size = new System.Drawing.Size(216, 95);
             this.pnlDiscounts.TabIndex = 6;
             // 
             // parrotLineGraph1
@@ -328,7 +327,7 @@
             this.parrotLineGraph1.ShowPoints = true;
             this.parrotLineGraph1.ShowTitle = false;
             this.parrotLineGraph1.ShowVerticalLines = false;
-            this.parrotLineGraph1.Size = new System.Drawing.Size(438, 287);
+            this.parrotLineGraph1.Size = new System.Drawing.Size(438, 298);
             this.parrotLineGraph1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.parrotLineGraph1.TabIndex = 0;
             this.parrotLineGraph1.Text = "parrotLineGraph1";
@@ -412,7 +411,7 @@
             this.poisonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.poisonDataGridView1.ShowCellErrors = false;
             this.poisonDataGridView1.ShowRowErrors = false;
-            this.poisonDataGridView1.Size = new System.Drawing.Size(438, 240);
+            this.poisonDataGridView1.Size = new System.Drawing.Size(438, 251);
             this.poisonDataGridView1.TabIndex = 5;
             // 
             // OrderID

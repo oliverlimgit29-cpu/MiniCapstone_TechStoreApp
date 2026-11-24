@@ -32,9 +32,9 @@
             this.btnVerify = new ReaLTaiizor.Controls.DungeonButtonLeft();
             this.dungeonLabel1 = new ReaLTaiizor.Controls.DungeonLabel();
             this.dungeonLabel2 = new ReaLTaiizor.Controls.DungeonLabel();
-            this.airForm1 = new ReaLTaiizor.Forms.AirForm();
+            this.AirFormEmailVerify = new ReaLTaiizor.Forms.AirForm();
             this.pnlVerifyEmail = new ReaLTaiizor.Controls.Panel();
-            this.airForm1.SuspendLayout();
+            this.AirFormEmailVerify.SuspendLayout();
             this.pnlVerifyEmail.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,28 +101,29 @@
             this.dungeonLabel2.TabIndex = 3;
             this.dungeonLabel2.Text = "Verification Code";
             // 
-            // airForm1
+            // AirFormEmailVerify
             // 
-            this.airForm1.BackColor = System.Drawing.Color.White;
-            this.airForm1.BorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.airForm1.Controls.Add(this.pnlVerifyEmail);
-            this.airForm1.Customization = "AAAA/1paWv9ycnL/";
-            this.airForm1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.airForm1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.airForm1.Image = null;
-            this.airForm1.Location = new System.Drawing.Point(0, 0);
-            this.airForm1.MinimumSize = new System.Drawing.Size(112, 35);
-            this.airForm1.Movable = true;
-            this.airForm1.Name = "airForm1";
-            this.airForm1.NoRounding = false;
-            this.airForm1.Sizable = true;
-            this.airForm1.Size = new System.Drawing.Size(800, 450);
-            this.airForm1.SmartBounds = true;
-            this.airForm1.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.airForm1.TabIndex = 0;
-            this.airForm1.Text = "Email Verification";
-            this.airForm1.TransparencyKey = System.Drawing.Color.Fuchsia;
-            this.airForm1.Transparent = false;
+            this.AirFormEmailVerify.BackColor = System.Drawing.Color.White;
+            this.AirFormEmailVerify.BorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.AirFormEmailVerify.Controls.Add(this.pnlVerifyEmail);
+            this.AirFormEmailVerify.Customization = "AAAA/1paWv9ycnL/";
+            this.AirFormEmailVerify.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AirFormEmailVerify.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AirFormEmailVerify.Image = null;
+            this.AirFormEmailVerify.Location = new System.Drawing.Point(0, 0);
+            this.AirFormEmailVerify.MaximumSize = new System.Drawing.Size(1366, 720);
+            this.AirFormEmailVerify.MinimumSize = new System.Drawing.Size(112, 35);
+            this.AirFormEmailVerify.Movable = true;
+            this.AirFormEmailVerify.Name = "AirFormEmailVerify";
+            this.AirFormEmailVerify.NoRounding = false;
+            this.AirFormEmailVerify.Sizable = true;
+            this.AirFormEmailVerify.Size = new System.Drawing.Size(800, 450);
+            this.AirFormEmailVerify.SmartBounds = true;
+            this.AirFormEmailVerify.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.AirFormEmailVerify.TabIndex = 0;
+            this.AirFormEmailVerify.Text = "Email Verification";
+            this.AirFormEmailVerify.TransparencyKey = System.Drawing.Color.Fuchsia;
+            this.AirFormEmailVerify.Transparent = false;
             // 
             // pnlVerifyEmail
             // 
@@ -146,9 +147,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.airForm1);
+            this.Controls.Add(this.AirFormEmailVerify);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1366, 720);
             this.MinimumSize = new System.Drawing.Size(112, 35);
             this.Name = "VerifyEmailForm";
             this.ShowIcon = false;
@@ -158,7 +160,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Shown += new System.EventHandler(this.VerifyEmailForm_Shown);
             this.Resize += new System.EventHandler(this.VerifyEmailForm_Resize);
-            this.airForm1.ResumeLayout(false);
+            this.AirFormEmailVerify.ResumeLayout(false);
             this.pnlVerifyEmail.ResumeLayout(false);
             this.pnlVerifyEmail.PerformLayout();
             this.ResumeLayout(false);
@@ -171,7 +173,7 @@
         private ReaLTaiizor.Controls.DungeonButtonLeft btnVerify;
         private ReaLTaiizor.Controls.DungeonLabel dungeonLabel1;
         private ReaLTaiizor.Controls.DungeonLabel dungeonLabel2;
-        private ReaLTaiizor.Forms.AirForm airForm1;
+        private ReaLTaiizor.Forms.AirForm AirFormEmailVerify;
         private ReaLTaiizor.Controls.Panel pnlVerifyEmail;
     }
 }
