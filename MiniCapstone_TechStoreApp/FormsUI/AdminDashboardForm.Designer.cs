@@ -30,14 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboardForm));
             this.parrotSlidingPanel1 = new ReaLTaiizor.Controls.ParrotSlidingPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnDiscount = new ReaLTaiizor.Controls.Button();
             this.btnCustomer = new ReaLTaiizor.Controls.Button();
             this.btnInventory = new ReaLTaiizor.Controls.Button();
             this.btnOrder = new ReaLTaiizor.Controls.Button();
             this.btnProduct = new ReaLTaiizor.Controls.Button();
             this.btnDashboard = new ReaLTaiizor.Controls.Button();
-            this.pnlRounder = new ReaLTaiizor.Controls.ParrotControlEllipse();
-            this.label1 = new System.Windows.Forms.Label();
             this.frmRounder = new ReaLTaiizor.Controls.ParrotFormEllipse();
             this.pnlContent = new ReaLTaiizor.Controls.Panel();
             this.parrotSlidingPanel1.SuspendLayout();
@@ -45,8 +44,8 @@
             // 
             // parrotSlidingPanel1
             // 
-            this.parrotSlidingPanel1.BottomLeft = System.Drawing.Color.MidnightBlue;
-            this.parrotSlidingPanel1.BottomRight = System.Drawing.Color.MidnightBlue;
+            this.parrotSlidingPanel1.BottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.parrotSlidingPanel1.BottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.parrotSlidingPanel1.CollapseControl = null;
             this.parrotSlidingPanel1.Collapsed = true;
             this.parrotSlidingPanel1.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
@@ -73,6 +72,18 @@
             this.parrotSlidingPanel1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.parrotSlidingPanel1.TopLeft = System.Drawing.Color.DarkBlue;
             this.parrotSlidingPanel1.TopRight = System.Drawing.Color.DarkBlue;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(45, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 24);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Admin";
             // 
             // btnDiscount
             // 
@@ -196,23 +207,6 @@
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
-            // pnlRounder
-            // 
-            this.pnlRounder.CornerRadius = 10;
-            this.pnlRounder.EffectedControl = this.parrotSlidingPanel1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(45, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 24);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Admin";
-            // 
             // frmRounder
             // 
             this.frmRounder.CornerRadius = 10;
@@ -220,7 +214,7 @@
             // 
             // pnlContent
             // 
-            this.pnlContent.BackColor = System.Drawing.Color.White;
+            this.pnlContent.BackColor = System.Drawing.Color.Gainsboro;
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContent.EdgeColor = System.Drawing.Color.White;
             this.pnlContent.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -248,6 +242,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formTheme1";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.parrotSlidingPanel1.ResumeLayout(false);
             this.parrotSlidingPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -257,7 +252,6 @@
         #endregion
 
         private ReaLTaiizor.Controls.ParrotSlidingPanel parrotSlidingPanel1;
-        private ReaLTaiizor.Controls.ParrotControlEllipse pnlRounder;
         private ReaLTaiizor.Controls.Button btnDashboard;
         private ReaLTaiizor.Controls.Button btnProduct;
         private ReaLTaiizor.Controls.Button btnOrder;

@@ -20,7 +20,8 @@ namespace MiniCapstone_TechStoreApp.FormsUI
         public AdminDashboardForm(string username, string password, bool isAdmin)
         {
             InitializeComponent();
-            OpenChildForm(new AdminDashboardContent());
+            //OpenChildForm(new AdminDashboardContent());
+            OpenChildForm(new AdminProductContent());
         }
 
         private Form activeForm = null;

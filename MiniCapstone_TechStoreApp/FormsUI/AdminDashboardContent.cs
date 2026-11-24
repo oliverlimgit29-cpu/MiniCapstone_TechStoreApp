@@ -15,6 +15,7 @@ namespace MiniCapstone_TechStoreApp.FormsUI
         public AdminDashboardContent()
         {
             InitializeComponent();
+            parrotLineGraph1.BackColor = Color.White;
         }
     }
 }
