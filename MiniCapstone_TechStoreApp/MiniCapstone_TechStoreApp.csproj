@@ -210,11 +210,11 @@
     <Compile Include="FormsUI\AdminDashboardForm.Designer.cs">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsUI\AdminProductContent.cs">
+    <Compile Include="FormsUI\AdminInventoryContent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsUI\AdminProductContent.Designer.cs">
-      <DependentUpon>AdminProductContent.cs</DependentUpon>
+    <Compile Include="FormsUI\AdminInventoryContent.Designer.cs">
+      <DependentUpon>AdminInventoryContent.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsUI\LoginForm.cs">
       <SubType>Form</SubType>
@@ -263,8 +263,8 @@
     <EmbeddedResource Include="FormsUI\AdminDashboardForm.resx">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsUI\AdminProductContent.resx">
-      <DependentUpon>AdminProductContent.cs</DependentUpon>
+    <EmbeddedResource Include="FormsUI\AdminInventoryContent.resx">
+      <DependentUpon>AdminInventoryContent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsUI\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

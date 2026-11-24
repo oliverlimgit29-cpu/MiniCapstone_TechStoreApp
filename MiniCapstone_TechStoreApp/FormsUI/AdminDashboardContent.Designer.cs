@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboardContent));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tblPanelAdminDashboard = new System.Windows.Forms.TableLayoutPanel();
             this.pnlRecentOrders = new System.Windows.Forms.Panel();
             this.pnlTotalCustomers = new System.Windows.Forms.Panel();
@@ -129,10 +129,10 @@
             this.tblPanelAdminDashboard.SetColumnSpan(this.pnlTotalCustomers, 2);
             this.pnlTotalCustomers.Controls.Add(this.label6);
             this.pnlTotalCustomers.Controls.Add(this.label7);
-            this.pnlTotalCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTotalCustomers.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTotalCustomers.Location = new System.Drawing.Point(447, 48);
             this.pnlTotalCustomers.Name = "pnlTotalCustomers";
-            this.pnlTotalCustomers.Size = new System.Drawing.Size(216, 95);
+            this.pnlTotalCustomers.Size = new System.Drawing.Size(216, 94);
             this.pnlTotalCustomers.TabIndex = 3;
             // 
             // pnlHeader
@@ -140,7 +140,7 @@
             this.pnlHeader.BackColor = System.Drawing.Color.White;
             this.tblPanelAdminDashboard.SetColumnSpan(this.pnlHeader, 8);
             this.pnlHeader.Controls.Add(this.label1);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(3, 3);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(882, 39);
@@ -152,11 +152,11 @@
             this.tblPanelAdminDashboard.SetColumnSpan(this.pnlTotalSales, 2);
             this.pnlTotalSales.Controls.Add(this.label3);
             this.pnlTotalSales.Controls.Add(this.label2);
-            this.pnlTotalSales.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTotalSales.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTotalSales.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pnlTotalSales.Location = new System.Drawing.Point(3, 48);
             this.pnlTotalSales.Name = "pnlTotalSales";
-            this.pnlTotalSales.Size = new System.Drawing.Size(216, 95);
+            this.pnlTotalSales.Size = new System.Drawing.Size(216, 94);
             this.pnlTotalSales.TabIndex = 1;
             // 
             // pnlTotalOrders
@@ -165,11 +165,11 @@
             this.tblPanelAdminDashboard.SetColumnSpan(this.pnlTotalOrders, 2);
             this.pnlTotalOrders.Controls.Add(this.label5);
             this.pnlTotalOrders.Controls.Add(this.label4);
-            this.pnlTotalOrders.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTotalOrders.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTotalOrders.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pnlTotalOrders.Location = new System.Drawing.Point(225, 48);
             this.pnlTotalOrders.Name = "pnlTotalOrders";
-            this.pnlTotalOrders.Size = new System.Drawing.Size(216, 95);
+            this.pnlTotalOrders.Size = new System.Drawing.Size(216, 94);
             this.pnlTotalOrders.TabIndex = 2;
             // 
             // pnlSalesOverview
@@ -301,10 +301,10 @@
             this.tblPanelAdminDashboard.SetColumnSpan(this.pnlDiscounts, 2);
             this.pnlDiscounts.Controls.Add(this.label8);
             this.pnlDiscounts.Controls.Add(this.label9);
-            this.pnlDiscounts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDiscounts.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlDiscounts.Location = new System.Drawing.Point(669, 48);
             this.pnlDiscounts.Name = "pnlDiscounts";
-            this.pnlDiscounts.Size = new System.Drawing.Size(216, 95);
+            this.pnlDiscounts.Size = new System.Drawing.Size(216, 94);
             this.pnlDiscounts.TabIndex = 6;
             // 
             // parrotLineGraph1
@@ -365,14 +365,14 @@
             this.poisonDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.poisonDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.poisonDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.poisonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.poisonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderID,
@@ -380,14 +380,14 @@
             this.Total,
             this.Status,
             this.Date});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
             this.poisonDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.poisonDataGridView1.EnableHeadersVisualStyles = false;
             this.poisonDataGridView1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -396,14 +396,14 @@
             this.poisonDataGridView1.Name = "poisonDataGridView1";
             this.poisonDataGridView1.ReadOnly = true;
             this.poisonDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.poisonDataGridView1.RowHeadersVisible = false;
             this.poisonDataGridView1.RowHeadersWidth = 20;
             this.poisonDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;

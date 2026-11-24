@@ -118,6 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACpSURBVEhL7dUxCgIxEIXhrbyDN/EMNl7CW3mgrW3URkQQ77DVL8LOIEN2kgem0q9LeG8Cu4EM
+        w983ADvgTJsTsI0zUsAjTqm4xhkpa8X9EiXrlJKSdUqpKQusgMPHul6aVbPAGhjTUCI9ANgAzzRUsdgF
+        9sBkgVaFOcX9/ge8df1EputPNl2vaYlSUrJOKSlZp5SUrAPuVmx0izNS84NziVMWHOUH57e9ACEKKgSK
+        ntjtAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="btnDiscount.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAARFJREFUSEvd
@@ -160,17 +169,6 @@
         LQZvPPgqxkygnIEPyKBzxUpFkwuUcOBj2h5TlzAQ1xppBf0zuSRPxOeuilFd+elT1eT4jYEr8Lg5gjSV
         VWFfOJPBhaPit+bLRW0jmITeJyq6cNIA9KZcmSolX/XFSX7VAB4DL4EX0ZLdC/wHazKCV3bKLMUAAAAA
         SUVORK5CYII=
-</value>
-  </data>
-  <data name="btnProduct.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAATFJREFUSEvt
-        lbFKA0EQhvMOYisIYpEyXTrBwkpBYvpUgp3iAygoWNqlsfANLBSEYJEurS8g2NuIhWD3yYb/js2/d9kz
-        phI/GG6Zf2Z2d/b2rtX6pwnAISnnHrcwwA4wXrK1fZ4S4Ma3swCnXrcEOFbQrms5gJ5yt10rAToKunQt
-        B3Cr3BXXZgC+gCf35wCegRf3J+igPtyfA/gE7tyfAFxpqxuu1QF0lZN/xYE9BR+4VgdwpJx91xKAVQVf
-        uFYHcK2cddcqCYcFPIQtN7THRgccADa1mp+S739ArxvuXwpRL0fa+pnMx7XmNWfQHfgtfa+bEF37YsIT
-        01+jgoFurGdR0ljj6Wc40rakh2cxnt8aR/2cTlJVAHiTP/A+9x9QhVZWtGkIrJneBybAPTCItb/DNxjN
-        vjeLItDzAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="btnDashboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

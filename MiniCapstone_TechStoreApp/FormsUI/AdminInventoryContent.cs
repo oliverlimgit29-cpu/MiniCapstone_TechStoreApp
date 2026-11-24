@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MiniCapstone_TechStoreApp.FormsUI
 {
-    public partial class AdminProductContent : Form
+    public partial class AdminInventoryContent : Form
     {
-        public AdminProductContent()
+        public AdminInventoryContent()
         {
             InitializeComponent();
         }

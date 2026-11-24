@@ -35,10 +35,10 @@
             this.btnCustomer = new ReaLTaiizor.Controls.Button();
             this.btnInventory = new ReaLTaiizor.Controls.Button();
             this.btnOrder = new ReaLTaiizor.Controls.Button();
-            this.btnProduct = new ReaLTaiizor.Controls.Button();
             this.btnDashboard = new ReaLTaiizor.Controls.Button();
             this.frmRounder = new ReaLTaiizor.Controls.ParrotFormEllipse();
             this.pnlContent = new ReaLTaiizor.Controls.Panel();
+            this.button1 = new ReaLTaiizor.Controls.Button();
             this.parrotSlidingPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,12 +49,12 @@
             this.parrotSlidingPanel1.CollapseControl = null;
             this.parrotSlidingPanel1.Collapsed = true;
             this.parrotSlidingPanel1.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+            this.parrotSlidingPanel1.Controls.Add(this.button1);
             this.parrotSlidingPanel1.Controls.Add(this.label1);
             this.parrotSlidingPanel1.Controls.Add(this.btnDiscount);
             this.parrotSlidingPanel1.Controls.Add(this.btnCustomer);
             this.parrotSlidingPanel1.Controls.Add(this.btnInventory);
             this.parrotSlidingPanel1.Controls.Add(this.btnOrder);
-            this.parrotSlidingPanel1.Controls.Add(this.btnProduct);
             this.parrotSlidingPanel1.Controls.Add(this.btnDashboard);
             this.parrotSlidingPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.parrotSlidingPanel1.HideControls = false;
@@ -96,11 +96,11 @@
             this.btnDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscount.Image")));
             this.btnDiscount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDiscount.InactiveColor = System.Drawing.Color.Transparent;
-            this.btnDiscount.Location = new System.Drawing.Point(12, 325);
+            this.btnDiscount.Location = new System.Drawing.Point(12, 332);
             this.btnDiscount.Name = "btnDiscount";
             this.btnDiscount.PressedBorderColor = System.Drawing.Color.Blue;
             this.btnDiscount.PressedColor = System.Drawing.Color.Blue;
-            this.btnDiscount.Size = new System.Drawing.Size(120, 49);
+            this.btnDiscount.Size = new System.Drawing.Size(120, 59);
             this.btnDiscount.TabIndex = 6;
             this.btnDiscount.Text = "Discounts";
             this.btnDiscount.TextAlignment = System.Drawing.StringAlignment.Far;
@@ -116,11 +116,11 @@
             this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
             this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCustomer.InactiveColor = System.Drawing.Color.Transparent;
-            this.btnCustomer.Location = new System.Drawing.Point(12, 276);
+            this.btnCustomer.Location = new System.Drawing.Point(12, 266);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.PressedBorderColor = System.Drawing.Color.Blue;
             this.btnCustomer.PressedColor = System.Drawing.Color.Blue;
-            this.btnCustomer.Size = new System.Drawing.Size(120, 49);
+            this.btnCustomer.Size = new System.Drawing.Size(120, 59);
             this.btnCustomer.TabIndex = 5;
             this.btnCustomer.Text = "Customers";
             this.btnCustomer.TextAlignment = System.Drawing.StringAlignment.Far;
@@ -136,11 +136,11 @@
             this.btnInventory.Image = ((System.Drawing.Image)(resources.GetObject("btnInventory.Image")));
             this.btnInventory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInventory.InactiveColor = System.Drawing.Color.Transparent;
-            this.btnInventory.Location = new System.Drawing.Point(12, 227);
+            this.btnInventory.Location = new System.Drawing.Point(12, 134);
             this.btnInventory.Name = "btnInventory";
             this.btnInventory.PressedBorderColor = System.Drawing.Color.Blue;
             this.btnInventory.PressedColor = System.Drawing.Color.Blue;
-            this.btnInventory.Size = new System.Drawing.Size(120, 49);
+            this.btnInventory.Size = new System.Drawing.Size(120, 59);
             this.btnInventory.TabIndex = 4;
             this.btnInventory.Text = "Inventory";
             this.btnInventory.TextAlignment = System.Drawing.StringAlignment.Far;
@@ -157,34 +157,14 @@
             this.btnOrder.Image = ((System.Drawing.Image)(resources.GetObject("btnOrder.Image")));
             this.btnOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOrder.InactiveColor = System.Drawing.Color.Transparent;
-            this.btnOrder.Location = new System.Drawing.Point(12, 178);
+            this.btnOrder.Location = new System.Drawing.Point(12, 200);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.PressedBorderColor = System.Drawing.Color.Blue;
             this.btnOrder.PressedColor = System.Drawing.Color.Blue;
-            this.btnOrder.Size = new System.Drawing.Size(120, 49);
+            this.btnOrder.Size = new System.Drawing.Size(120, 59);
             this.btnOrder.TabIndex = 3;
             this.btnOrder.Text = "Orders";
             this.btnOrder.TextAlignment = System.Drawing.StringAlignment.Far;
-            // 
-            // btnProduct
-            // 
-            this.btnProduct.BackColor = System.Drawing.Color.Transparent;
-            this.btnProduct.BorderColor = System.Drawing.Color.Transparent;
-            this.btnProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProduct.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnProduct.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
-            this.btnProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProduct.InactiveColor = System.Drawing.Color.Transparent;
-            this.btnProduct.Location = new System.Drawing.Point(12, 129);
-            this.btnProduct.Name = "btnProduct";
-            this.btnProduct.PressedBorderColor = System.Drawing.Color.Blue;
-            this.btnProduct.PressedColor = System.Drawing.Color.Blue;
-            this.btnProduct.Size = new System.Drawing.Size(120, 49);
-            this.btnProduct.TabIndex = 2;
-            this.btnProduct.Text = "Products       ";
-            this.btnProduct.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
             // btnDashboard
             // 
@@ -197,12 +177,12 @@
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.InactiveColor = System.Drawing.Color.Transparent;
-            this.btnDashboard.Location = new System.Drawing.Point(12, 80);
+            this.btnDashboard.Location = new System.Drawing.Point(12, 68);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(12);
             this.btnDashboard.PressedBorderColor = System.Drawing.Color.Blue;
             this.btnDashboard.PressedColor = System.Drawing.Color.Blue;
-            this.btnDashboard.Size = new System.Drawing.Size(120, 49);
+            this.btnDashboard.Size = new System.Drawing.Size(120, 59);
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlignment = System.Drawing.StringAlignment.Far;
@@ -225,6 +205,27 @@
             this.pnlContent.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.pnlContent.TabIndex = 1;
             this.pnlContent.Text = "panel1";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BorderColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button1.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.InactiveColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(0, 397);
+            this.button1.Name = "button1";
+            this.button1.PressedBorderColor = System.Drawing.Color.Blue;
+            this.button1.PressedColor = System.Drawing.Color.Blue;
+            this.button1.Size = new System.Drawing.Size(155, 53);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Log Out";
+            this.button1.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // AdminDashboardForm
             // 
@@ -253,7 +254,6 @@
 
         private ReaLTaiizor.Controls.ParrotSlidingPanel parrotSlidingPanel1;
         private ReaLTaiizor.Controls.Button btnDashboard;
-        private ReaLTaiizor.Controls.Button btnProduct;
         private ReaLTaiizor.Controls.Button btnOrder;
         private ReaLTaiizor.Controls.Button btnDiscount;
         private ReaLTaiizor.Controls.Button btnCustomer;
@@ -261,5 +261,6 @@
         private System.Windows.Forms.Label label1;
         private ReaLTaiizor.Controls.ParrotFormEllipse frmRounder;
         private ReaLTaiizor.Controls.Panel pnlContent;
+        private ReaLTaiizor.Controls.Button button1;
     }
 }
