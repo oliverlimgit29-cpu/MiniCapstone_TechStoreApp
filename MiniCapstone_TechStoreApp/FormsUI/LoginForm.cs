@@ -68,8 +68,7 @@ namespace MiniCapstone_TechStoreApp
                 // Open the appropriate dashboard
                 if (UserSession.IsBuyer)
                 {
-                    UserDashboardForm buyerForm =
-                        new UserDashboardForm();
+                    UserDashboardForm buyerForm = new UserDashboardForm();
 
                     buyerForm.FormClosed += (s, args) =>
                     {
