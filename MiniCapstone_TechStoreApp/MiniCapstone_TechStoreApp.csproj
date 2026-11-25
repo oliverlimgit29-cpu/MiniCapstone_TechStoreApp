@@ -249,8 +249,15 @@
     </Compile>
     <Compile Include="Helper\FormLayoutHelper.cs" />
     <Compile Include="Helper\UserSession.cs" />
+    <Compile Include="Models\CartDB.cs" />
+    <Compile Include="Models\DiscountDB.cs" />
     <Compile Include="Models\EmailVerfication.cs" />
+    <Compile Include="Models\FeedbackDB.cs" />
+    <Compile Include="Models\OrderDB.cs" />
+    <Compile Include="Models\PaymentDB.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductDB.cs" />
+    <Compile Include="Models\StockHistoryDB.cs" />
     <Compile Include="Models\UserDB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
