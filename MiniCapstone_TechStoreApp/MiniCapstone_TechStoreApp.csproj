@@ -198,6 +198,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormsUI\AdminCustomerContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUI\AdminCustomerContent.Designer.cs">
+      <DependentUpon>AdminCustomerContent.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsUI\AdminDashboardContent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,11 +216,29 @@
     <Compile Include="FormsUI\AdminDashboardForm.Designer.cs">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsUI\AdminDiscountContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUI\AdminDiscountContent.Designer.cs">
+      <DependentUpon>AdminDiscountContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUI\AdminFeedbackContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUI\AdminFeedbackContent.Designer.cs">
+      <DependentUpon>AdminFeedbackContent.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsUI\AdminInventoryContent.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsUI\AdminInventoryContent.Designer.cs">
       <DependentUpon>AdminInventoryContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUI\AdminOrderContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUI\AdminOrderContent.Designer.cs">
+      <DependentUpon>AdminOrderContent.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsUI\LoginForm.cs">
       <SubType>Form</SubType>
