@@ -41,7 +41,7 @@ namespace MiniCapstone_TechStoreApp.FormsUI
                 _db = new MongoDBConnector();
                 await _db.SeedSampleProductsAsync();
 
-                List<Product> products = await _db.Products.Find(_ => true).ToListAsync();
+                List<Product> products = await _db.Product.Find(_ => true).ToListAsync();
                 MessageBox.Show("Products loaded: " + products.Count);
 
                 RenderProducts(products);
