@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminInventoryContent));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -36,28 +37,25 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tblpanelInventory = new System.Windows.Forms.TableLayoutPanel();
             this.pnlCategories = new System.Windows.Forms.Panel();
+            this.cmbCategories = new ReaLTaiizor.Controls.HopeComboBox();
             this.pnlAddProduct = new System.Windows.Forms.Panel();
-            this.pnlHeader = new System.Windows.Forms.Panel();
+            this.btnAddProduct = new ReaLTaiizor.Controls.Button();
             this.pnlLowStock = new System.Windows.Forms.Panel();
-            this.pnlOutOfStock = new System.Windows.Forms.Panel();
-            this.pnlTotalProducts = new System.Windows.Forms.Panel();
-            this.pnlStockStatus = new System.Windows.Forms.Panel();
-            this.pnlSearch = new System.Windows.Forms.Panel();
-            this.pnlInventory = new System.Windows.Forms.Panel();
-            this.pnlStockHistory = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pnlOutOfStock = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.pnlTotalProducts = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pnlStockStatus = new System.Windows.Forms.Panel();
+            this.cmbBrands = new ReaLTaiizor.Controls.HopeComboBox();
+            this.pnlSearch = new System.Windows.Forms.Panel();
+            this.btnSearch = new ReaLTaiizor.Controls.Button();
+            this.pnlInventory = new System.Windows.Forms.Panel();
             this.dgvInventory = new ReaLTaiizor.Controls.PoisonDataGridView();
-            this.Image = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ProductImage = new System.Windows.Forms.DataGridViewImageColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SKU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,27 +64,34 @@
             this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Actions = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.pnlStockHistory = new System.Windows.Forms.Panel();
             this.dgvStockHistory = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label12 = new System.Windows.Forms.Label();
             this.pnlStockHistoryHeader = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pnlHeader = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbStockStatus = new ReaLTaiizor.Controls.HopeComboBox();
+            this.txtBoxSearch = new ReaLTaiizor.Controls.HopeTextBox();
             this.tblpanelInventory.SuspendLayout();
             this.pnlCategories.SuspendLayout();
             this.pnlAddProduct.SuspendLayout();
-            this.pnlHeader.SuspendLayout();
             this.pnlLowStock.SuspendLayout();
             this.pnlOutOfStock.SuspendLayout();
             this.pnlTotalProducts.SuspendLayout();
             this.pnlStockStatus.SuspendLayout();
             this.pnlSearch.SuspendLayout();
             this.pnlInventory.SuspendLayout();
-            this.pnlStockHistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
+            this.pnlStockHistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockHistory)).BeginInit();
             this.pnlStockHistoryHeader.SuspendLayout();
+            this.pnlHeader.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tblpanelInventory
@@ -105,16 +110,17 @@
             this.tblpanelInventory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
             this.tblpanelInventory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
             this.tblpanelInventory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.tblpanelInventory.Controls.Add(this.pnlCategories, 4, 4);
+            this.tblpanelInventory.Controls.Add(this.pnlCategories, 3, 4);
             this.tblpanelInventory.Controls.Add(this.pnlAddProduct, 0, 4);
             this.tblpanelInventory.Controls.Add(this.pnlLowStock, 4, 2);
             this.tblpanelInventory.Controls.Add(this.pnlOutOfStock, 8, 2);
             this.tblpanelInventory.Controls.Add(this.pnlTotalProducts, 0, 2);
-            this.tblpanelInventory.Controls.Add(this.pnlStockStatus, 6, 4);
+            this.tblpanelInventory.Controls.Add(this.pnlStockStatus, 4, 4);
             this.tblpanelInventory.Controls.Add(this.pnlSearch, 9, 4);
             this.tblpanelInventory.Controls.Add(this.pnlInventory, 0, 6);
             this.tblpanelInventory.Controls.Add(this.pnlStockHistory, 0, 15);
             this.tblpanelInventory.Controls.Add(this.pnlHeader, 0, 0);
+            this.tblpanelInventory.Controls.Add(this.panel1, 7, 4);
             this.tblpanelInventory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblpanelInventory.Location = new System.Drawing.Point(0, 0);
             this.tblpanelInventory.Name = "tblpanelInventory";
@@ -146,38 +152,72 @@
             // 
             this.pnlCategories.BackColor = System.Drawing.Color.White;
             this.tblpanelInventory.SetColumnSpan(this.pnlCategories, 2);
-            this.pnlCategories.Controls.Add(this.label9);
+            this.pnlCategories.Controls.Add(this.cmbCategories);
             this.pnlCategories.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlCategories.Location = new System.Drawing.Point(267, 115);
+            this.pnlCategories.Location = new System.Drawing.Point(201, 115);
             this.pnlCategories.Name = "pnlCategories";
             this.tblpanelInventory.SetRowSpan(this.pnlCategories, 2);
             this.pnlCategories.Size = new System.Drawing.Size(126, 38);
             this.pnlCategories.TabIndex = 3;
             // 
+            // cmbCategories
+            // 
+            this.cmbCategories.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbCategories.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbCategories.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbCategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategories.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbCategories.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cmbCategories.FormattingEnabled = true;
+            this.cmbCategories.ItemHeight = 30;
+            this.cmbCategories.Items.AddRange(new object[] {
+            "All Categories",
+            "Desktop",
+            "Laptop",
+            "Mouse",
+            "Keyboard",
+            "Monitor",
+            "Phone"});
+            this.cmbCategories.Location = new System.Drawing.Point(0, 0);
+            this.cmbCategories.Name = "cmbCategories";
+            this.cmbCategories.Size = new System.Drawing.Size(126, 36);
+            this.cmbCategories.TabIndex = 1;
+            this.cmbCategories.SelectedIndexChanged += new System.EventHandler(this.filterOrSearchChange);
+            // 
             // pnlAddProduct
             // 
-            this.pnlAddProduct.BackColor = System.Drawing.Color.White;
+            this.pnlAddProduct.BackColor = System.Drawing.Color.Transparent;
             this.tblpanelInventory.SetColumnSpan(this.pnlAddProduct, 3);
-            this.pnlAddProduct.Controls.Add(this.label8);
+            this.pnlAddProduct.Controls.Add(this.btnAddProduct);
             this.pnlAddProduct.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlAddProduct.ForeColor = System.Drawing.Color.Transparent;
             this.pnlAddProduct.Location = new System.Drawing.Point(3, 115);
             this.pnlAddProduct.Name = "pnlAddProduct";
             this.tblpanelInventory.SetRowSpan(this.pnlAddProduct, 2);
             this.pnlAddProduct.Size = new System.Drawing.Size(192, 38);
             this.pnlAddProduct.TabIndex = 2;
             // 
-            // pnlHeader
+            // btnAddProduct
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.White;
-            this.tblpanelInventory.SetColumnSpan(this.pnlHeader, 12);
-            this.pnlHeader.Controls.Add(this.label1);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.ForeColor = System.Drawing.Color.Black;
-            this.pnlHeader.Location = new System.Drawing.Point(3, 3);
-            this.pnlHeader.Name = "pnlHeader";
-            this.tblpanelInventory.SetRowSpan(this.pnlHeader, 2);
-            this.pnlHeader.Size = new System.Drawing.Size(794, 46);
-            this.pnlHeader.TabIndex = 0;
+            this.btnAddProduct.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddProduct.BorderColor = System.Drawing.Color.Transparent;
+            this.btnAddProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAddProduct.EnteredBorderColor = System.Drawing.Color.Transparent;
+            this.btnAddProduct.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddProduct.Image = null;
+            this.btnAddProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddProduct.InactiveColor = System.Drawing.Color.MidnightBlue;
+            this.btnAddProduct.Location = new System.Drawing.Point(0, 0);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.Padding = new System.Windows.Forms.Padding(12);
+            this.btnAddProduct.PressedBorderColor = System.Drawing.Color.Transparent;
+            this.btnAddProduct.PressedColor = System.Drawing.Color.Blue;
+            this.btnAddProduct.Size = new System.Drawing.Size(192, 38);
+            this.btnAddProduct.TabIndex = 4;
+            this.btnAddProduct.Text = "➕   Add Product";
+            this.btnAddProduct.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // pnlLowStock
             // 
@@ -191,116 +231,6 @@
             this.tblpanelInventory.SetRowSpan(this.pnlLowStock, 2);
             this.pnlLowStock.Size = new System.Drawing.Size(258, 46);
             this.pnlLowStock.TabIndex = 2;
-            // 
-            // pnlOutOfStock
-            // 
-            this.pnlOutOfStock.BackColor = System.Drawing.Color.White;
-            this.tblpanelInventory.SetColumnSpan(this.pnlOutOfStock, 4);
-            this.pnlOutOfStock.Controls.Add(this.label6);
-            this.pnlOutOfStock.Controls.Add(this.label7);
-            this.pnlOutOfStock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlOutOfStock.Location = new System.Drawing.Point(531, 55);
-            this.pnlOutOfStock.Name = "pnlOutOfStock";
-            this.tblpanelInventory.SetRowSpan(this.pnlOutOfStock, 2);
-            this.pnlOutOfStock.Size = new System.Drawing.Size(266, 46);
-            this.pnlOutOfStock.TabIndex = 3;
-            // 
-            // pnlTotalProducts
-            // 
-            this.pnlTotalProducts.BackColor = System.Drawing.Color.White;
-            this.tblpanelInventory.SetColumnSpan(this.pnlTotalProducts, 4);
-            this.pnlTotalProducts.Controls.Add(this.label3);
-            this.pnlTotalProducts.Controls.Add(this.label2);
-            this.pnlTotalProducts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTotalProducts.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.pnlTotalProducts.Location = new System.Drawing.Point(3, 55);
-            this.pnlTotalProducts.Name = "pnlTotalProducts";
-            this.tblpanelInventory.SetRowSpan(this.pnlTotalProducts, 2);
-            this.pnlTotalProducts.Size = new System.Drawing.Size(258, 46);
-            this.pnlTotalProducts.TabIndex = 1;
-            // 
-            // pnlStockStatus
-            // 
-            this.pnlStockStatus.BackColor = System.Drawing.Color.White;
-            this.tblpanelInventory.SetColumnSpan(this.pnlStockStatus, 2);
-            this.pnlStockStatus.Controls.Add(this.label10);
-            this.pnlStockStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlStockStatus.Location = new System.Drawing.Point(399, 115);
-            this.pnlStockStatus.Name = "pnlStockStatus";
-            this.tblpanelInventory.SetRowSpan(this.pnlStockStatus, 2);
-            this.pnlStockStatus.Size = new System.Drawing.Size(126, 38);
-            this.pnlStockStatus.TabIndex = 4;
-            // 
-            // pnlSearch
-            // 
-            this.pnlSearch.BackColor = System.Drawing.Color.White;
-            this.tblpanelInventory.SetColumnSpan(this.pnlSearch, 3);
-            this.pnlSearch.Controls.Add(this.label11);
-            this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlSearch.Location = new System.Drawing.Point(597, 115);
-            this.pnlSearch.Name = "pnlSearch";
-            this.tblpanelInventory.SetRowSpan(this.pnlSearch, 2);
-            this.pnlSearch.Size = new System.Drawing.Size(200, 38);
-            this.pnlSearch.TabIndex = 4;
-            // 
-            // pnlInventory
-            // 
-            this.pnlInventory.BackColor = System.Drawing.Color.White;
-            this.tblpanelInventory.SetColumnSpan(this.pnlInventory, 20);
-            this.pnlInventory.Controls.Add(this.dgvInventory);
-            this.pnlInventory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlInventory.Location = new System.Drawing.Point(3, 159);
-            this.pnlInventory.Name = "pnlInventory";
-            this.tblpanelInventory.SetRowSpan(this.pnlInventory, 9);
-            this.pnlInventory.Size = new System.Drawing.Size(794, 228);
-            this.pnlInventory.TabIndex = 5;
-            // 
-            // pnlStockHistory
-            // 
-            this.pnlStockHistory.BackColor = System.Drawing.Color.White;
-            this.tblpanelInventory.SetColumnSpan(this.pnlStockHistory, 20);
-            this.pnlStockHistory.Controls.Add(this.dgvStockHistory);
-            this.pnlStockHistory.Controls.Add(this.pnlStockHistoryHeader);
-            this.pnlStockHistory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlStockHistory.Location = new System.Drawing.Point(3, 393);
-            this.pnlStockHistory.Name = "pnlStockHistory";
-            this.tblpanelInventory.SetRowSpan(this.pnlStockHistory, 5);
-            this.pnlStockHistory.Size = new System.Drawing.Size(794, 127);
-            this.pnlStockHistory.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(18, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Inventory Management";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(28, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Total Products";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(28, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "0";
             // 
             // label4
             // 
@@ -326,6 +256,19 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Low Stock";
             // 
+            // pnlOutOfStock
+            // 
+            this.pnlOutOfStock.BackColor = System.Drawing.Color.White;
+            this.tblpanelInventory.SetColumnSpan(this.pnlOutOfStock, 4);
+            this.pnlOutOfStock.Controls.Add(this.label6);
+            this.pnlOutOfStock.Controls.Add(this.label7);
+            this.pnlOutOfStock.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlOutOfStock.Location = new System.Drawing.Point(531, 55);
+            this.pnlOutOfStock.Name = "pnlOutOfStock";
+            this.tblpanelInventory.SetRowSpan(this.pnlOutOfStock, 2);
+            this.pnlOutOfStock.Size = new System.Drawing.Size(266, 46);
+            this.pnlOutOfStock.TabIndex = 3;
+            // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -350,53 +293,125 @@
             this.label7.TabIndex = 5;
             this.label7.Text = "Out of Stock";
             // 
-            // label8
+            // pnlTotalProducts
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(59, 14);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 13);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "+ Add Product";
+            this.pnlTotalProducts.BackColor = System.Drawing.Color.White;
+            this.tblpanelInventory.SetColumnSpan(this.pnlTotalProducts, 4);
+            this.pnlTotalProducts.Controls.Add(this.label3);
+            this.pnlTotalProducts.Controls.Add(this.label2);
+            this.pnlTotalProducts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTotalProducts.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.pnlTotalProducts.Location = new System.Drawing.Point(3, 55);
+            this.pnlTotalProducts.Name = "pnlTotalProducts";
+            this.tblpanelInventory.SetRowSpan(this.pnlTotalProducts, 2);
+            this.pnlTotalProducts.Size = new System.Drawing.Size(258, 46);
+            this.pnlTotalProducts.TabIndex = 1;
             // 
-            // label9
+            // label3
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(23, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 13);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "All Categories v";
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(40, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(13, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "0";
             // 
-            // label10
+            // label2
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label10.Location = new System.Drawing.Point(18, 14);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(91, 13);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "All Stock Status v";
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(40, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Total Products";
             // 
-            // label11
+            // pnlStockStatus
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label11.Location = new System.Drawing.Point(45, 14);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(111, 13);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Search (Name / SKU)";
+            this.pnlStockStatus.BackColor = System.Drawing.Color.White;
+            this.tblpanelInventory.SetColumnSpan(this.pnlStockStatus, 2);
+            this.pnlStockStatus.Controls.Add(this.cmbBrands);
+            this.pnlStockStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlStockStatus.Location = new System.Drawing.Point(333, 115);
+            this.pnlStockStatus.Name = "pnlStockStatus";
+            this.tblpanelInventory.SetRowSpan(this.pnlStockStatus, 2);
+            this.pnlStockStatus.Size = new System.Drawing.Size(126, 38);
+            this.pnlStockStatus.TabIndex = 4;
+            // 
+            // cmbBrands
+            // 
+            this.cmbBrands.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbBrands.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbBrands.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbBrands.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBrands.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbBrands.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cmbBrands.FormattingEnabled = true;
+            this.cmbBrands.ItemHeight = 30;
+            this.cmbBrands.Items.AddRange(new object[] {
+            "All Brands",
+            "Apple",
+            "Huawei",
+            "Samsung",
+            "Asus",
+            "Lenovo",
+            "Xiaomi"});
+            this.cmbBrands.Location = new System.Drawing.Point(0, 0);
+            this.cmbBrands.Name = "cmbBrands";
+            this.cmbBrands.Size = new System.Drawing.Size(126, 36);
+            this.cmbBrands.TabIndex = 1;
+            this.cmbBrands.SelectedIndexChanged += new System.EventHandler(this.filterOrSearchChange);
+            // 
+            // pnlSearch
+            // 
+            this.pnlSearch.BackColor = System.Drawing.Color.White;
+            this.tblpanelInventory.SetColumnSpan(this.pnlSearch, 3);
+            this.pnlSearch.Controls.Add(this.txtBoxSearch);
+            this.pnlSearch.Controls.Add(this.btnSearch);
+            this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlSearch.Location = new System.Drawing.Point(597, 115);
+            this.pnlSearch.Name = "pnlSearch";
+            this.tblpanelInventory.SetRowSpan(this.pnlSearch, 2);
+            this.pnlSearch.Size = new System.Drawing.Size(200, 38);
+            this.pnlSearch.TabIndex = 4;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSearch.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.btnSearch.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch.InactiveColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(167, 0);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.btnSearch.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.btnSearch.Size = new System.Drawing.Size(33, 38);
+            this.btnSearch.TabIndex = 7;
+            this.btnSearch.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.btnSearch.Click += new System.EventHandler(this.filterOrSearchChange);
+            // 
+            // pnlInventory
+            // 
+            this.pnlInventory.BackColor = System.Drawing.Color.White;
+            this.tblpanelInventory.SetColumnSpan(this.pnlInventory, 20);
+            this.pnlInventory.Controls.Add(this.dgvInventory);
+            this.pnlInventory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlInventory.Location = new System.Drawing.Point(3, 159);
+            this.pnlInventory.Name = "pnlInventory";
+            this.tblpanelInventory.SetRowSpan(this.pnlInventory, 9);
+            this.pnlInventory.Size = new System.Drawing.Size(794, 228);
+            this.pnlInventory.TabIndex = 5;
             // 
             // dgvInventory
             // 
@@ -418,7 +433,7 @@
             this.dgvInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Image,
+            this.ProductImage,
             this.ProductName,
             this.SKU,
             this.Category,
@@ -453,16 +468,20 @@
             this.dgvInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvInventory.RowHeadersVisible = false;
             this.dgvInventory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvInventory.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dgvInventory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvInventory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInventory.Size = new System.Drawing.Size(794, 228);
             this.dgvInventory.TabIndex = 0;
+            this.dgvInventory.UseCustomForeColor = true;
             // 
-            // Image
+            // ProductImage
             // 
-            this.Image.HeaderText = "Image";
-            this.Image.Name = "Image";
-            this.Image.ReadOnly = true;
+            this.ProductImage.HeaderText = "Image";
+            this.ProductImage.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.ProductImage.Name = "ProductImage";
+            this.ProductImage.ReadOnly = true;
+            this.ProductImage.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // ProductName
             // 
@@ -511,6 +530,19 @@
             this.Actions.HeaderText = "Actions";
             this.Actions.Name = "Actions";
             this.Actions.ReadOnly = true;
+            // 
+            // pnlStockHistory
+            // 
+            this.pnlStockHistory.BackColor = System.Drawing.Color.White;
+            this.tblpanelInventory.SetColumnSpan(this.pnlStockHistory, 20);
+            this.pnlStockHistory.Controls.Add(this.dgvStockHistory);
+            this.pnlStockHistory.Controls.Add(this.pnlStockHistoryHeader);
+            this.pnlStockHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlStockHistory.Location = new System.Drawing.Point(3, 393);
+            this.pnlStockHistory.Name = "pnlStockHistory";
+            this.tblpanelInventory.SetRowSpan(this.pnlStockHistory, 5);
+            this.pnlStockHistory.Size = new System.Drawing.Size(794, 127);
+            this.pnlStockHistory.TabIndex = 6;
             // 
             // dgvStockHistory
             // 
@@ -591,6 +623,16 @@
             this.Quantity.Name = "Quantity";
             this.Quantity.ReadOnly = true;
             // 
+            // pnlStockHistoryHeader
+            // 
+            this.pnlStockHistoryHeader.BackColor = System.Drawing.Color.White;
+            this.pnlStockHistoryHeader.Controls.Add(this.label12);
+            this.pnlStockHistoryHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlStockHistoryHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlStockHistoryHeader.Name = "pnlStockHistoryHeader";
+            this.pnlStockHistoryHeader.Size = new System.Drawing.Size(794, 17);
+            this.pnlStockHistoryHeader.TabIndex = 4;
+            // 
             // label12
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -603,15 +645,85 @@
             this.label12.TabIndex = 3;
             this.label12.Text = "Stock History";
             // 
-            // pnlStockHistoryHeader
+            // pnlHeader
             // 
-            this.pnlStockHistoryHeader.BackColor = System.Drawing.Color.White;
-            this.pnlStockHistoryHeader.Controls.Add(this.label12);
-            this.pnlStockHistoryHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlStockHistoryHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlStockHistoryHeader.Name = "pnlStockHistoryHeader";
-            this.pnlStockHistoryHeader.Size = new System.Drawing.Size(794, 17);
-            this.pnlStockHistoryHeader.TabIndex = 4;
+            this.pnlHeader.BackColor = System.Drawing.Color.White;
+            this.tblpanelInventory.SetColumnSpan(this.pnlHeader, 12);
+            this.pnlHeader.Controls.Add(this.label1);
+            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeader.ForeColor = System.Drawing.Color.Black;
+            this.pnlHeader.Location = new System.Drawing.Point(3, 3);
+            this.pnlHeader.Name = "pnlHeader";
+            this.tblpanelInventory.SetRowSpan(this.pnlHeader, 2);
+            this.pnlHeader.Size = new System.Drawing.Size(794, 46);
+            this.pnlHeader.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(18, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Inventory Management";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.tblpanelInventory.SetColumnSpan(this.panel1, 2);
+            this.panel1.Controls.Add(this.cmbStockStatus);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(465, 115);
+            this.panel1.Name = "panel1";
+            this.tblpanelInventory.SetRowSpan(this.panel1, 2);
+            this.panel1.Size = new System.Drawing.Size(126, 38);
+            this.panel1.TabIndex = 5;
+            // 
+            // cmbStockStatus
+            // 
+            this.cmbStockStatus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbStockStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbStockStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbStockStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStockStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbStockStatus.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cmbStockStatus.FormattingEnabled = true;
+            this.cmbStockStatus.ItemHeight = 30;
+            this.cmbStockStatus.Items.AddRange(new object[] {
+            "All Stock Status",
+            "Active",
+            "Low Stock",
+            "Out of Stock"});
+            this.cmbStockStatus.Location = new System.Drawing.Point(0, 0);
+            this.cmbStockStatus.Name = "cmbStockStatus";
+            this.cmbStockStatus.Size = new System.Drawing.Size(126, 36);
+            this.cmbStockStatus.TabIndex = 2;
+            this.cmbStockStatus.SelectedIndexChanged += new System.EventHandler(this.filterOrSearchChange);
+            // 
+            // txtBoxSearch
+            // 
+            this.txtBoxSearch.BackColor = System.Drawing.Color.White;
+            this.txtBoxSearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.txtBoxSearch.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.txtBoxSearch.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.txtBoxSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtBoxSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtBoxSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.txtBoxSearch.Hint = "Search (Name/SKU)";
+            this.txtBoxSearch.Location = new System.Drawing.Point(0, 0);
+            this.txtBoxSearch.MaxLength = 32767;
+            this.txtBoxSearch.Multiline = false;
+            this.txtBoxSearch.Name = "txtBoxSearch";
+            this.txtBoxSearch.PasswordChar = '\0';
+            this.txtBoxSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtBoxSearch.SelectedText = "";
+            this.txtBoxSearch.SelectionLength = 0;
+            this.txtBoxSearch.SelectionStart = 0;
+            this.txtBoxSearch.Size = new System.Drawing.Size(167, 38);
+            this.txtBoxSearch.TabIndex = 7;
+            this.txtBoxSearch.TabStop = false;
+            this.txtBoxSearch.UseSystemPasswordChar = false;
             // 
             // AdminInventoryContent
             // 
@@ -623,13 +735,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminInventoryContent";
             this.Text = "AdminProductContent";
+            this.Load += new System.EventHandler(this.AdminInventoryContent_Load);
             this.tblpanelInventory.ResumeLayout(false);
             this.pnlCategories.ResumeLayout(false);
-            this.pnlCategories.PerformLayout();
             this.pnlAddProduct.ResumeLayout(false);
-            this.pnlAddProduct.PerformLayout();
-            this.pnlHeader.ResumeLayout(false);
-            this.pnlHeader.PerformLayout();
             this.pnlLowStock.ResumeLayout(false);
             this.pnlLowStock.PerformLayout();
             this.pnlOutOfStock.ResumeLayout(false);
@@ -637,15 +746,16 @@
             this.pnlTotalProducts.ResumeLayout(false);
             this.pnlTotalProducts.PerformLayout();
             this.pnlStockStatus.ResumeLayout(false);
-            this.pnlStockStatus.PerformLayout();
             this.pnlSearch.ResumeLayout(false);
-            this.pnlSearch.PerformLayout();
             this.pnlInventory.ResumeLayout(false);
-            this.pnlStockHistory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
+            this.pnlStockHistory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockHistory)).EndInit();
             this.pnlStockHistoryHeader.ResumeLayout(false);
             this.pnlStockHistoryHeader.PerformLayout();
+            this.pnlHeader.ResumeLayout(false);
+            this.pnlHeader.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -670,12 +780,21 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private ReaLTaiizor.Controls.PoisonDataGridView dgvInventory;
-        private System.Windows.Forms.DataGridViewImageColumn Image;
+        private ReaLTaiizor.Controls.PoisonDataGridView dgvStockHistory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Product;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.Panel pnlStockHistoryHeader;
+        private System.Windows.Forms.Label label12;
+        private ReaLTaiizor.Controls.Button btnAddProduct;
+        private ReaLTaiizor.Controls.HopeComboBox cmbCategories;
+        private ReaLTaiizor.Controls.HopeComboBox cmbBrands;
+        private System.Windows.Forms.Panel panel1;
+        private ReaLTaiizor.Controls.HopeComboBox cmbStockStatus;
+        private ReaLTaiizor.Controls.Button btnSearch;
+        private System.Windows.Forms.DataGridViewImageColumn ProductImage;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
         private System.Windows.Forms.DataGridViewTextBoxColumn SKU;
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;
@@ -684,12 +803,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.DataGridViewButtonColumn Actions;
-        private ReaLTaiizor.Controls.PoisonDataGridView dgvStockHistory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Product;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.Panel pnlStockHistoryHeader;
-        private System.Windows.Forms.Label label12;
+        private ReaLTaiizor.Controls.HopeTextBox txtBoxSearch;
     }
 }

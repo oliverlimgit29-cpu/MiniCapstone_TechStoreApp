@@ -22,6 +22,14 @@ namespace MiniCapstone_TechStoreApp.Models
 
         public int StockQuantity { get; set; }
         public string ImageUrl { get; set; }
+
+        public byte[] ImageData { get; set; }
+
+        public BsonDocument Specifications { get; set; }
+
+        //// Groups related product variants
+        //public string ModelGroupId { get; set; }
+
         public bool IsActive { get; set; }
         public DateTime CreatedAt { get; set; }
         public byte[] ImageData { get; set; }

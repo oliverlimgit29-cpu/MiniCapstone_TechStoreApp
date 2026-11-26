@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboardForm));
             this.pnlSidebar = new ReaLTaiizor.Controls.ParrotSlidingPanel();
+            this.button1 = new ReaLTaiizor.Controls.Button();
+            this.btnFeedback = new ReaLTaiizor.Controls.Button();
             this.btnClose = new ReaLTaiizor.Controls.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDiscount = new ReaLTaiizor.Controls.Button();
@@ -39,8 +41,6 @@
             this.btnDashboard = new ReaLTaiizor.Controls.Button();
             this.frmRounder = new ReaLTaiizor.Controls.ParrotFormEllipse();
             this.pnlContent = new ReaLTaiizor.Controls.Panel();
-            this.btnFeedback = new ReaLTaiizor.Controls.Button();
-            this.button1 = new ReaLTaiizor.Controls.Button();
             this.pnlSidebar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +76,47 @@
             this.pnlSidebar.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.pnlSidebar.TopLeft = System.Drawing.Color.DarkBlue;
             this.pnlSidebar.TopRight = System.Drawing.Color.DarkBlue;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BorderColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button1.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.InactiveColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(0, 480);
+            this.button1.Name = "button1";
+            this.button1.PressedBorderColor = System.Drawing.Color.Blue;
+            this.button1.PressedColor = System.Drawing.Color.Blue;
+            this.button1.Size = new System.Drawing.Size(155, 36);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "         Log Out";
+            this.button1.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // btnFeedback
+            // 
+            this.btnFeedback.BackColor = System.Drawing.Color.Transparent;
+            this.btnFeedback.BorderColor = System.Drawing.Color.Transparent;
+            this.btnFeedback.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFeedback.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnFeedback.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnFeedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnFeedback.Image = ((System.Drawing.Image)(resources.GetObject("btnFeedback.Image")));
+            this.btnFeedback.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFeedback.InactiveColor = System.Drawing.Color.Transparent;
+            this.btnFeedback.Location = new System.Drawing.Point(9, 388);
+            this.btnFeedback.Name = "btnFeedback";
+            this.btnFeedback.PressedBorderColor = System.Drawing.Color.Blue;
+            this.btnFeedback.PressedColor = System.Drawing.Color.Blue;
+            this.btnFeedback.Size = new System.Drawing.Size(137, 59);
+            this.btnFeedback.TabIndex = 9;
+            this.btnFeedback.Text = "         Feedbacks";
+            this.btnFeedback.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // btnClose
             // 
@@ -230,47 +271,6 @@
             this.pnlContent.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.pnlContent.TabIndex = 1;
             this.pnlContent.Text = "panel1";
-            // 
-            // btnFeedback
-            // 
-            this.btnFeedback.BackColor = System.Drawing.Color.Transparent;
-            this.btnFeedback.BorderColor = System.Drawing.Color.Transparent;
-            this.btnFeedback.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFeedback.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnFeedback.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnFeedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnFeedback.Image = ((System.Drawing.Image)(resources.GetObject("btnFeedback.Image")));
-            this.btnFeedback.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFeedback.InactiveColor = System.Drawing.Color.Transparent;
-            this.btnFeedback.Location = new System.Drawing.Point(9, 388);
-            this.btnFeedback.Name = "btnFeedback";
-            this.btnFeedback.PressedBorderColor = System.Drawing.Color.Blue;
-            this.btnFeedback.PressedColor = System.Drawing.Color.Blue;
-            this.btnFeedback.Size = new System.Drawing.Size(137, 59);
-            this.btnFeedback.TabIndex = 9;
-            this.btnFeedback.Text = "         Feedbacks";
-            this.btnFeedback.TextAlignment = System.Drawing.StringAlignment.Near;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BorderColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button1.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.InactiveColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(0, 480);
-            this.button1.Name = "button1";
-            this.button1.PressedBorderColor = System.Drawing.Color.Blue;
-            this.button1.PressedColor = System.Drawing.Color.Blue;
-            this.button1.Size = new System.Drawing.Size(155, 36);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "         Log Out";
-            this.button1.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // AdminDashboardForm
             // 
