@@ -31,6 +31,8 @@ namespace MiniCapstone_TechStoreApp.Models
 
         public string ImageUrl { get; set; }
 
+        public byte[] ImageData { get; set; }
+
         public BsonDocument Specifications { get; set; }
 
         //// Groups related product variants

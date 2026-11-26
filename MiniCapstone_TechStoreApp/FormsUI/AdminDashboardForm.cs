@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MiniCapstone_TechStoreApp.DatabaseMongoDB;
 
 namespace MiniCapstone_TechStoreApp.FormsUI
 {
@@ -17,11 +18,11 @@ namespace MiniCapstone_TechStoreApp.FormsUI
             InitializeComponent();
         }
 
-        public AdminDashboardForm(string username, string password, bool isAdmin)
+        public AdminDashboardForm(string username, string password, bool isAdmin, MongoDBConnector db)
         {
             InitializeComponent();
             //OpenChildForm(new AdminDashboardContent());
-            OpenChildForm(new AdminInventoryContent());
+            OpenChildForm(new AdminInventoryContent(db));
         }
 
         private Form activeForm = null;
