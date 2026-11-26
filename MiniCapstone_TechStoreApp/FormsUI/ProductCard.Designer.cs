@@ -33,12 +33,13 @@
             this.btnAddToCart = new System.Windows.Forms.Button();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblRating = new System.Windows.Forms.Label();
+            this.btnViewProduct = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // pbProduct
             // 
-            this.pbProduct.Location = new System.Drawing.Point(15, 3);
+            this.pbProduct.Location = new System.Drawing.Point(14, 3);
             this.pbProduct.Name = "pbProduct";
             this.pbProduct.Size = new System.Drawing.Size(150, 98);
             this.pbProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -56,7 +57,7 @@
             // 
             // btnAddToCart
             // 
-            this.btnAddToCart.Location = new System.Drawing.Point(49, 214);
+            this.btnAddToCart.Location = new System.Drawing.Point(12, 214);
             this.btnAddToCart.Name = "btnAddToCart";
             this.btnAddToCart.Size = new System.Drawing.Size(75, 23);
             this.btnAddToCart.TabIndex = 4;
@@ -81,11 +82,22 @@
             this.lblRating.TabIndex = 6;
             this.lblRating.Text = "Rating";
             // 
+            // btnViewProduct
+            // 
+            this.btnViewProduct.Location = new System.Drawing.Point(92, 214);
+            this.btnViewProduct.Name = "btnViewProduct";
+            this.btnViewProduct.Size = new System.Drawing.Size(75, 23);
+            this.btnViewProduct.TabIndex = 7;
+            this.btnViewProduct.Text = "View";
+            this.btnViewProduct.UseVisualStyleBackColor = true;
+            this.btnViewProduct.Click += new System.EventHandler(this.btnViewProduct_Click);
+            // 
             // ProductCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.btnViewProduct);
             this.Controls.Add(this.lblRating);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.btnAddToCart);
@@ -108,5 +120,6 @@
         private System.Windows.Forms.Button btnAddToCart;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblRating;
+        private System.Windows.Forms.Button btnViewProduct;
     }
 }

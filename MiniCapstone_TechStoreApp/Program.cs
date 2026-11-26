@@ -40,6 +40,8 @@ namespace MiniCapstone_TechStoreApp
                 //Application.Run(new LoginForm(authService));
                 Application.Run(new AdminDashboardForm("admin", "12345678", true, db));
                 //Application.Run(new AdminDashboardContent());
+                //Application.Run(new UserDashboardForm());
+
             }
             catch (Exception ex)
             {
