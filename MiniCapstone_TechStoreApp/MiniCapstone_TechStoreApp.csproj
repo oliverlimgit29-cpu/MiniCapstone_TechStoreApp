@@ -288,6 +288,18 @@
     <Compile Include="Services\AuthenticatorService.cs" />
     <Compile Include="Services\EmailService.cs" />
     <Compile Include="Services\EmailVerificationService.cs" />
+    <Compile Include="FormsUI\UserCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUI\UserCart.Designer.cs">
+      <DependentUpon>UserCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUI\UserProductDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUI\UserProductDetails.Designer.cs">
+      <DependentUpon>UserProductDetails.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormsUI\AdminDashboardContent.resx">
       <DependentUpon>AdminDashboardContent.cs</DependentUpon>
     </EmbeddedResource>
@@ -321,6 +333,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormsUI\UserCart.resx">
+      <DependentUpon>UserCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsUI\UserProductDetails.resx">
+      <DependentUpon>UserProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

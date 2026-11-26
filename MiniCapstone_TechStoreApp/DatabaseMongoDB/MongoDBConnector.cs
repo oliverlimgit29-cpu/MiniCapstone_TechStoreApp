@@ -81,29 +81,11 @@ namespace MiniCapstone_TechStoreApp.DatabaseMongoDB
         }
 
         //added
-        public IMongoCollection<Product> Product
+        public IMongoCollection<ProductDB> ProductDB
         {
-            get { return database.GetCollection<Product>("Products"); }
+            get { return database.GetCollection<ProductDB>("Products"); }
         }
 
-        public async Task SeedSampleProductsAsync()
-        {
-            long existingCount = await Product.CountDocumentsAsync(FilterDefinition<Product>.Empty);
-            if (existingCount > 0)
-            {
-                return;
-            }
-
-            List<Product> sampleProducts = new List<Product>
-            {
-                new Product { Name = "ASUS ROG Strix G16", Brand = "Asus", Category = "Laptop", Price = 74999m, Rating = 4.8 },
-                new Product { Name = "Dell UltraSharp 27", Brand = "Dell", Category = "Monitor", Price = 21500m, Rating = 4.6 },
-                new Product { Name = "Corsair K70 RGB Pro", Brand = "Corsair", Category = "Keyboard", Price = 6800m, Rating = 4.7 },
-                new Product { Name = "Logitech G Pro X Superlight", Brand = "Logitech", Category = "Mouse", Price = 5900m, Rating = 4.9 }
-            };
-
-            await Product.InsertManyAsync(sampleProducts);
-        }
 
         //backup indexes pag nawala database
         //public async Task CreateIndexesAsync()
