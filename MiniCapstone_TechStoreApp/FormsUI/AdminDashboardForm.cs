@@ -22,8 +22,8 @@ namespace MiniCapstone_TechStoreApp.FormsUI
         {
             InitializeComponent();
             //OpenChildForm(new AdminDashboardContent());
-            //OpenChildForm(new AdminInventoryContent(db));
-            OpenChildForm(new AdminCustomerContent());
+            OpenChildForm(new AdminInventoryContent(db));
+            //OpenChildForm(new AdminCustomerContent());
         }
 
         private Form activeForm = null;
