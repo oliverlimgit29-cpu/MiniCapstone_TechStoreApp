@@ -32,7 +32,6 @@ namespace MiniCapstone_TechStoreApp.Models
 
         public bool IsActive { get; set; }
         public DateTime CreatedAt { get; set; }
-        public byte[] ImageData { get; set; }
 
         // Computed from Feedbacks collection (not stored directly on Products)
         [BsonIgnore]
