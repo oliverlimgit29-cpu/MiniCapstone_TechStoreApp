@@ -228,17 +228,41 @@
     <Compile Include="FormsUI\AdminFeedbackContent.Designer.cs">
       <DependentUpon>AdminFeedbackContent.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsUI\AdminInventoryAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUI\AdminInventoryAddProduct.Designer.cs">
+      <DependentUpon>AdminInventoryAddProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsUI\AdminInventoryContent.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsUI\AdminInventoryContent.Designer.cs">
       <DependentUpon>AdminInventoryContent.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsUI\AdminInventoryEditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUI\AdminInventoryEditProduct.Designer.cs">
+      <DependentUpon>AdminInventoryEditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUI\AdminInventoryManageStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUI\AdminInventoryManageStock.Designer.cs">
+      <DependentUpon>AdminInventoryManageStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsUI\AdminOrderContent.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsUI\AdminOrderContent.Designer.cs">
       <DependentUpon>AdminOrderContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUI\ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUI\ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsUI\LoginForm.cs">
       <SubType>Form</SubType>

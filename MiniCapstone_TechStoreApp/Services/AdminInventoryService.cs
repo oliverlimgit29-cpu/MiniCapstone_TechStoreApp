@@ -42,9 +42,9 @@ namespace MiniCapstone_TechStoreApp.Services
                      p.SKU.IndexOf(search,
                          StringComparison.OrdinalIgnoreCase) >= 0))
 
-                && (category == "All Categories" || p.Category == category)
+                && (category == "All Categories" || p.Category.ToLowerInvariant() == category.ToLowerInvariant())
 
-                && (brand == "All Brands" || p.Brand == brand)
+                && (brand == "All Brands" || p.Brand.ToLowerInvariant() == brand.ToLowerInvariant())
 
                 && (status == "All Stock Status" ||
                     (status == "Out of Stock" && p.StockQuantity <= 0) ||

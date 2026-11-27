@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminInventoryContent));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tblpanelInventory = new System.Windows.Forms.TableLayoutPanel();
             this.pnlCategories = new System.Windows.Forms.Panel();
             this.cmbCategories = new ReaLTaiizor.Controls.HopeComboBox();
@@ -49,9 +49,10 @@
             this.pnlTotalProducts = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pnlStockStatus = new System.Windows.Forms.Panel();
+            this.pnlBrands = new System.Windows.Forms.Panel();
             this.cmbBrands = new ReaLTaiizor.Controls.HopeComboBox();
             this.pnlSearch = new System.Windows.Forms.Panel();
+            this.txtBoxSearch = new ReaLTaiizor.Controls.HopeTextBox();
             this.btnSearch = new ReaLTaiizor.Controls.Button();
             this.pnlInventory = new System.Windows.Forms.Panel();
             this.dgvInventory = new ReaLTaiizor.Controls.PoisonDataGridView();
@@ -74,16 +75,23 @@
             this.label12 = new System.Windows.Forms.Label();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlStockStatus = new System.Windows.Forms.Panel();
             this.cmbStockStatus = new ReaLTaiizor.Controls.HopeComboBox();
-            this.txtBoxSearch = new ReaLTaiizor.Controls.HopeTextBox();
+            this.roundedHeader = new ReaLTaiizor.Controls.ParrotControlEllipse();
+            this.roundedTotalProducts = new ReaLTaiizor.Controls.ParrotControlEllipse();
+            this.roundedLowStock = new ReaLTaiizor.Controls.ParrotControlEllipse();
+            this.roundedOutOfStock = new ReaLTaiizor.Controls.ParrotControlEllipse();
+            this.roundedCategories = new ReaLTaiizor.Controls.ParrotControlEllipse();
+            this.roundedBrands = new ReaLTaiizor.Controls.ParrotControlEllipse();
+            this.roundedStockStatus = new ReaLTaiizor.Controls.ParrotControlEllipse();
+            this.roundedSearch = new ReaLTaiizor.Controls.ParrotControlEllipse();
             this.tblpanelInventory.SuspendLayout();
             this.pnlCategories.SuspendLayout();
             this.pnlAddProduct.SuspendLayout();
             this.pnlLowStock.SuspendLayout();
             this.pnlOutOfStock.SuspendLayout();
             this.pnlTotalProducts.SuspendLayout();
-            this.pnlStockStatus.SuspendLayout();
+            this.pnlBrands.SuspendLayout();
             this.pnlSearch.SuspendLayout();
             this.pnlInventory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
@@ -91,7 +99,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockHistory)).BeginInit();
             this.pnlStockHistoryHeader.SuspendLayout();
             this.pnlHeader.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnlStockStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // tblpanelInventory
@@ -115,12 +123,12 @@
             this.tblpanelInventory.Controls.Add(this.pnlLowStock, 4, 2);
             this.tblpanelInventory.Controls.Add(this.pnlOutOfStock, 8, 2);
             this.tblpanelInventory.Controls.Add(this.pnlTotalProducts, 0, 2);
-            this.tblpanelInventory.Controls.Add(this.pnlStockStatus, 4, 4);
+            this.tblpanelInventory.Controls.Add(this.pnlBrands, 4, 4);
             this.tblpanelInventory.Controls.Add(this.pnlSearch, 9, 4);
             this.tblpanelInventory.Controls.Add(this.pnlInventory, 0, 6);
-            this.tblpanelInventory.Controls.Add(this.pnlStockHistory, 0, 15);
+            this.tblpanelInventory.Controls.Add(this.pnlStockHistory, 0, 13);
             this.tblpanelInventory.Controls.Add(this.pnlHeader, 0, 0);
-            this.tblpanelInventory.Controls.Add(this.panel1, 7, 4);
+            this.tblpanelInventory.Controls.Add(this.pnlStockStatus, 7, 4);
             this.tblpanelInventory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblpanelInventory.Location = new System.Drawing.Point(0, 0);
             this.tblpanelInventory.Name = "tblpanelInventory";
@@ -150,7 +158,7 @@
             // 
             // pnlCategories
             // 
-            this.pnlCategories.BackColor = System.Drawing.Color.White;
+            this.pnlCategories.BackColor = System.Drawing.Color.Transparent;
             this.tblpanelInventory.SetColumnSpan(this.pnlCategories, 2);
             this.pnlCategories.Controls.Add(this.cmbCategories);
             this.pnlCategories.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -208,7 +216,7 @@
             this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddProduct.Image = null;
             this.btnAddProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddProduct.InactiveColor = System.Drawing.Color.MidnightBlue;
+            this.btnAddProduct.InactiveColor = System.Drawing.Color.DodgerBlue;
             this.btnAddProduct.Location = new System.Drawing.Point(0, 0);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Padding = new System.Windows.Forms.Padding(12);
@@ -237,10 +245,11 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(41, 30);
+            this.label4.Location = new System.Drawing.Point(41, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 13);
+            this.label4.Size = new System.Drawing.Size(18, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "0";
             // 
@@ -249,10 +258,11 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(41, 6);
+            this.label5.Location = new System.Drawing.Point(41, 2);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.Size = new System.Drawing.Size(83, 20);
             this.label5.TabIndex = 3;
             this.label5.Text = "Low Stock";
             // 
@@ -274,10 +284,11 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(40, 30);
+            this.label6.Location = new System.Drawing.Point(40, 27);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 13);
+            this.label6.Size = new System.Drawing.Size(18, 20);
             this.label6.TabIndex = 6;
             this.label6.Text = "0";
             // 
@@ -286,10 +297,11 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(40, 6);
+            this.label7.Location = new System.Drawing.Point(40, 2);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 13);
+            this.label7.Size = new System.Drawing.Size(98, 20);
             this.label7.TabIndex = 5;
             this.label7.Text = "Out of Stock";
             // 
@@ -312,10 +324,11 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(40, 30);
+            this.label3.Location = new System.Drawing.Point(40, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
+            this.label3.Size = new System.Drawing.Size(18, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "0";
             // 
@@ -324,24 +337,25 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(40, 6);
+            this.label2.Location = new System.Drawing.Point(40, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.Size = new System.Drawing.Size(111, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Total Products";
             // 
-            // pnlStockStatus
+            // pnlBrands
             // 
-            this.pnlStockStatus.BackColor = System.Drawing.Color.White;
-            this.tblpanelInventory.SetColumnSpan(this.pnlStockStatus, 2);
-            this.pnlStockStatus.Controls.Add(this.cmbBrands);
-            this.pnlStockStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlStockStatus.Location = new System.Drawing.Point(333, 115);
-            this.pnlStockStatus.Name = "pnlStockStatus";
-            this.tblpanelInventory.SetRowSpan(this.pnlStockStatus, 2);
-            this.pnlStockStatus.Size = new System.Drawing.Size(126, 38);
-            this.pnlStockStatus.TabIndex = 4;
+            this.pnlBrands.BackColor = System.Drawing.Color.Transparent;
+            this.tblpanelInventory.SetColumnSpan(this.pnlBrands, 2);
+            this.pnlBrands.Controls.Add(this.cmbBrands);
+            this.pnlBrands.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBrands.Location = new System.Drawing.Point(333, 115);
+            this.pnlBrands.Name = "pnlBrands";
+            this.tblpanelInventory.SetRowSpan(this.pnlBrands, 2);
+            this.pnlBrands.Size = new System.Drawing.Size(126, 38);
+            this.pnlBrands.TabIndex = 4;
             // 
             // cmbBrands
             // 
@@ -369,7 +383,7 @@
             // 
             // pnlSearch
             // 
-            this.pnlSearch.BackColor = System.Drawing.Color.White;
+            this.pnlSearch.BackColor = System.Drawing.Color.Transparent;
             this.tblpanelInventory.SetColumnSpan(this.pnlSearch, 3);
             this.pnlSearch.Controls.Add(this.txtBoxSearch);
             this.pnlSearch.Controls.Add(this.btnSearch);
@@ -380,23 +394,47 @@
             this.pnlSearch.Size = new System.Drawing.Size(200, 38);
             this.pnlSearch.TabIndex = 4;
             // 
+            // txtBoxSearch
+            // 
+            this.txtBoxSearch.BackColor = System.Drawing.Color.White;
+            this.txtBoxSearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.txtBoxSearch.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.txtBoxSearch.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.txtBoxSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtBoxSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtBoxSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.txtBoxSearch.Hint = "Search (Name/SKU)";
+            this.txtBoxSearch.Location = new System.Drawing.Point(0, 0);
+            this.txtBoxSearch.MaxLength = 32767;
+            this.txtBoxSearch.Multiline = false;
+            this.txtBoxSearch.Name = "txtBoxSearch";
+            this.txtBoxSearch.PasswordChar = '\0';
+            this.txtBoxSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtBoxSearch.SelectedText = "";
+            this.txtBoxSearch.SelectionLength = 0;
+            this.txtBoxSearch.SelectionStart = 0;
+            this.txtBoxSearch.Size = new System.Drawing.Size(160, 38);
+            this.txtBoxSearch.TabIndex = 7;
+            this.txtBoxSearch.TabStop = false;
+            this.txtBoxSearch.UseSystemPasswordChar = false;
+            // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnSearch.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.btnSearch.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.btnSearch.EnteredBorderColor = System.Drawing.Color.Black;
+            this.btnSearch.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSearch.InactiveColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(167, 0);
+            this.btnSearch.Location = new System.Drawing.Point(160, 0);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.btnSearch.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.btnSearch.Size = new System.Drawing.Size(33, 38);
+            this.btnSearch.PressedBorderColor = System.Drawing.Color.Black;
+            this.btnSearch.PressedColor = System.Drawing.Color.Silver;
+            this.btnSearch.Size = new System.Drawing.Size(40, 38);
             this.btnSearch.TabIndex = 7;
             this.btnSearch.TextAlignment = System.Drawing.StringAlignment.Center;
             this.btnSearch.Click += new System.EventHandler(this.filterOrSearchChange);
@@ -409,8 +447,8 @@
             this.pnlInventory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlInventory.Location = new System.Drawing.Point(3, 159);
             this.pnlInventory.Name = "pnlInventory";
-            this.tblpanelInventory.SetRowSpan(this.pnlInventory, 9);
-            this.pnlInventory.Size = new System.Drawing.Size(794, 228);
+            this.tblpanelInventory.SetRowSpan(this.pnlInventory, 7);
+            this.pnlInventory.Size = new System.Drawing.Size(794, 176);
             this.pnlInventory.TabIndex = 5;
             // 
             // dgvInventory
@@ -423,14 +461,14 @@
             this.dgvInventory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvInventory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvInventory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductImage,
@@ -442,14 +480,14 @@
             this.Stock,
             this.Status,
             this.Actions});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvInventory.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvInventory.DefaultCellStyle = dataGridViewCellStyle32;
             this.dgvInventory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvInventory.EnableHeadersVisualStyles = false;
             this.dgvInventory.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -458,21 +496,22 @@
             this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.ReadOnly = true;
             this.dgvInventory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle33;
             this.dgvInventory.RowHeadersVisible = false;
             this.dgvInventory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvInventory.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dgvInventory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvInventory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInventory.Size = new System.Drawing.Size(794, 228);
+            this.dgvInventory.Size = new System.Drawing.Size(794, 176);
             this.dgvInventory.TabIndex = 0;
+            this.dgvInventory.UseCustomBackColor = true;
             this.dgvInventory.UseCustomForeColor = true;
             // 
             // ProductImage
@@ -538,10 +577,10 @@
             this.pnlStockHistory.Controls.Add(this.dgvStockHistory);
             this.pnlStockHistory.Controls.Add(this.pnlStockHistoryHeader);
             this.pnlStockHistory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlStockHistory.Location = new System.Drawing.Point(3, 393);
+            this.pnlStockHistory.Location = new System.Drawing.Point(3, 341);
             this.pnlStockHistory.Name = "pnlStockHistory";
-            this.tblpanelInventory.SetRowSpan(this.pnlStockHistory, 5);
-            this.pnlStockHistory.Size = new System.Drawing.Size(794, 127);
+            this.tblpanelInventory.SetRowSpan(this.pnlStockHistory, 7);
+            this.pnlStockHistory.Size = new System.Drawing.Size(794, 179);
             this.pnlStockHistory.TabIndex = 6;
             // 
             // dgvStockHistory
@@ -554,49 +593,49 @@
             this.dgvStockHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvStockHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvStockHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStockHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStockHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.dgvStockHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Date,
             this.Product,
             this.Type,
             this.Quantity});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStockHistory.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStockHistory.DefaultCellStyle = dataGridViewCellStyle35;
             this.dgvStockHistory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvStockHistory.EnableHeadersVisualStyles = false;
             this.dgvStockHistory.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgvStockHistory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgvStockHistory.Location = new System.Drawing.Point(0, 17);
+            this.dgvStockHistory.Location = new System.Drawing.Point(0, 28);
             this.dgvStockHistory.Name = "dgvStockHistory";
             this.dgvStockHistory.ReadOnly = true;
             this.dgvStockHistory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStockHistory.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStockHistory.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
             this.dgvStockHistory.RowHeadersVisible = false;
             this.dgvStockHistory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvStockHistory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvStockHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStockHistory.Size = new System.Drawing.Size(794, 110);
+            this.dgvStockHistory.Size = new System.Drawing.Size(794, 151);
             this.dgvStockHistory.TabIndex = 0;
             // 
             // Date
@@ -630,7 +669,7 @@
             this.pnlStockHistoryHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlStockHistoryHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlStockHistoryHeader.Name = "pnlStockHistoryHeader";
-            this.pnlStockHistoryHeader.Size = new System.Drawing.Size(794, 17);
+            this.pnlStockHistoryHeader.Size = new System.Drawing.Size(794, 28);
             this.pnlStockHistoryHeader.TabIndex = 4;
             // 
             // label12
@@ -639,7 +678,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label12.Location = new System.Drawing.Point(3, 0);
+            this.label12.Location = new System.Drawing.Point(3, 6);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(70, 13);
             this.label12.TabIndex = 3;
@@ -647,7 +686,7 @@
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.White;
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
             this.tblpanelInventory.SetColumnSpan(this.pnlHeader, 12);
             this.pnlHeader.Controls.Add(this.label1);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -662,23 +701,25 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(18, 13);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(50, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 13);
+            this.label1.Size = new System.Drawing.Size(172, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Inventory Management";
             // 
-            // panel1
+            // pnlStockStatus
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.tblpanelInventory.SetColumnSpan(this.panel1, 2);
-            this.panel1.Controls.Add(this.cmbStockStatus);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(465, 115);
-            this.panel1.Name = "panel1";
-            this.tblpanelInventory.SetRowSpan(this.panel1, 2);
-            this.panel1.Size = new System.Drawing.Size(126, 38);
-            this.panel1.TabIndex = 5;
+            this.pnlStockStatus.BackColor = System.Drawing.Color.Transparent;
+            this.tblpanelInventory.SetColumnSpan(this.pnlStockStatus, 2);
+            this.pnlStockStatus.Controls.Add(this.cmbStockStatus);
+            this.pnlStockStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlStockStatus.Location = new System.Drawing.Point(465, 115);
+            this.pnlStockStatus.Name = "pnlStockStatus";
+            this.tblpanelInventory.SetRowSpan(this.pnlStockStatus, 2);
+            this.pnlStockStatus.Size = new System.Drawing.Size(126, 38);
+            this.pnlStockStatus.TabIndex = 5;
             // 
             // cmbStockStatus
             // 
@@ -692,7 +733,7 @@
             this.cmbStockStatus.ItemHeight = 30;
             this.cmbStockStatus.Items.AddRange(new object[] {
             "All Stock Status",
-            "Active",
+            "In Stock",
             "Low Stock",
             "Out of Stock"});
             this.cmbStockStatus.Location = new System.Drawing.Point(0, 0);
@@ -701,29 +742,45 @@
             this.cmbStockStatus.TabIndex = 2;
             this.cmbStockStatus.SelectedIndexChanged += new System.EventHandler(this.filterOrSearchChange);
             // 
-            // txtBoxSearch
+            // roundedHeader
             // 
-            this.txtBoxSearch.BackColor = System.Drawing.Color.White;
-            this.txtBoxSearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.txtBoxSearch.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.txtBoxSearch.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.txtBoxSearch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtBoxSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtBoxSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.txtBoxSearch.Hint = "Search (Name/SKU)";
-            this.txtBoxSearch.Location = new System.Drawing.Point(0, 0);
-            this.txtBoxSearch.MaxLength = 32767;
-            this.txtBoxSearch.Multiline = false;
-            this.txtBoxSearch.Name = "txtBoxSearch";
-            this.txtBoxSearch.PasswordChar = '\0';
-            this.txtBoxSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtBoxSearch.SelectedText = "";
-            this.txtBoxSearch.SelectionLength = 0;
-            this.txtBoxSearch.SelectionStart = 0;
-            this.txtBoxSearch.Size = new System.Drawing.Size(167, 38);
-            this.txtBoxSearch.TabIndex = 7;
-            this.txtBoxSearch.TabStop = false;
-            this.txtBoxSearch.UseSystemPasswordChar = false;
+            this.roundedHeader.CornerRadius = 10;
+            this.roundedHeader.EffectedControl = this.pnlHeader;
+            // 
+            // roundedTotalProducts
+            // 
+            this.roundedTotalProducts.CornerRadius = 10;
+            this.roundedTotalProducts.EffectedControl = this.pnlTotalProducts;
+            // 
+            // roundedLowStock
+            // 
+            this.roundedLowStock.CornerRadius = 10;
+            this.roundedLowStock.EffectedControl = this.pnlLowStock;
+            // 
+            // roundedOutOfStock
+            // 
+            this.roundedOutOfStock.CornerRadius = 10;
+            this.roundedOutOfStock.EffectedControl = this.pnlOutOfStock;
+            // 
+            // roundedCategories
+            // 
+            this.roundedCategories.CornerRadius = 10;
+            this.roundedCategories.EffectedControl = this.cmbCategories;
+            // 
+            // roundedBrands
+            // 
+            this.roundedBrands.CornerRadius = 10;
+            this.roundedBrands.EffectedControl = this.cmbBrands;
+            // 
+            // roundedStockStatus
+            // 
+            this.roundedStockStatus.CornerRadius = 10;
+            this.roundedStockStatus.EffectedControl = this.cmbStockStatus;
+            // 
+            // roundedSearch
+            // 
+            this.roundedSearch.CornerRadius = 10;
+            this.roundedSearch.EffectedControl = this.txtBoxSearch;
             // 
             // AdminInventoryContent
             // 
@@ -745,7 +802,7 @@
             this.pnlOutOfStock.PerformLayout();
             this.pnlTotalProducts.ResumeLayout(false);
             this.pnlTotalProducts.PerformLayout();
-            this.pnlStockStatus.ResumeLayout(false);
+            this.pnlBrands.ResumeLayout(false);
             this.pnlSearch.ResumeLayout(false);
             this.pnlInventory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
@@ -755,7 +812,7 @@
             this.pnlStockHistoryHeader.PerformLayout();
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.pnlStockStatus.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -769,7 +826,7 @@
         private System.Windows.Forms.Panel pnlOutOfStock;
         private System.Windows.Forms.Panel pnlTotalProducts;
         private System.Windows.Forms.Panel pnlCategories;
-        private System.Windows.Forms.Panel pnlStockStatus;
+        private System.Windows.Forms.Panel pnlBrands;
         private System.Windows.Forms.Panel pnlSearch;
         private System.Windows.Forms.Panel pnlInventory;
         private System.Windows.Forms.Panel pnlStockHistory;
@@ -791,7 +848,7 @@
         private ReaLTaiizor.Controls.Button btnAddProduct;
         private ReaLTaiizor.Controls.HopeComboBox cmbCategories;
         private ReaLTaiizor.Controls.HopeComboBox cmbBrands;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlStockStatus;
         private ReaLTaiizor.Controls.HopeComboBox cmbStockStatus;
         private ReaLTaiizor.Controls.Button btnSearch;
         private System.Windows.Forms.DataGridViewImageColumn ProductImage;
@@ -804,5 +861,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.DataGridViewButtonColumn Actions;
         private ReaLTaiizor.Controls.HopeTextBox txtBoxSearch;
+        private ReaLTaiizor.Controls.ParrotControlEllipse roundedHeader;
+        private ReaLTaiizor.Controls.ParrotControlEllipse roundedTotalProducts;
+        private ReaLTaiizor.Controls.ParrotControlEllipse roundedLowStock;
+        private ReaLTaiizor.Controls.ParrotControlEllipse roundedOutOfStock;
+        private ReaLTaiizor.Controls.ParrotControlEllipse roundedCategories;
+        private ReaLTaiizor.Controls.ParrotControlEllipse roundedBrands;
+        private ReaLTaiizor.Controls.ParrotControlEllipse roundedStockStatus;
+        private ReaLTaiizor.Controls.ParrotControlEllipse roundedSearch;
     }
 }
